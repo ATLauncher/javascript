@@ -22,4 +22,6 @@ Once installed simply run `npm install` to install all the packages needed for t
 You'll also need to make sure you have gulp installed globally by running `npm install -g gulp` so that you can run the tasks needed to work with the styleguide.
 
 ### Building the styleguide
-TBD
+To build the styleguide css for development run `gulp dev` and to build the styleguide for production run `gulp build`. The built files are available in the dist folder.
+
+To build the actual styleguide itself, run `gulp styleguide`. The styleguide is available in the styleguide folder.

@@ -1,0 +1,30 @@
+{
+  "name": "atlauncher-styleguide",
+  "version": "0.0.1",
+  "description": "ATLauncher Styleguide is a styleguide containing sets of components that we use across all our projects.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "kss": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ATLauncher/Styleguide.git"
+  },
+  "keywords": [
+    "atlauncher",
+    "minecraft",
+    "styleguide"
+  ],
+  "author": "RyanTheAllmighty <ryantheallmighty@atlauncher.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ATLauncher/Styleguide/issues"
+  },
+  "homepage": "https://github.com/ATLauncher/Styleguide#readme"
+}
