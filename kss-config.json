@@ -2,5 +2,6 @@
   "source": [
     "components"
   ],
-  "destination":  "styleguide/"
+  "destination": "styleguide/",
+  "template": "template/"
 }

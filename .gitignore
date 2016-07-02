@@ -3,6 +3,3 @@ dist/
 
 # node modules folder
 node_modules/
-
-# styleguide folder
-styleguide/
