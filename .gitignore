@@ -1,5 +1,8 @@
-# dist folder
-dist/
-
 # node modules folder
 node_modules/
+
+# built storybook directory
+.out
+
+# IntelliJ IDE files
+.idea

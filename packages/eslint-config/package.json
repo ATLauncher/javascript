@@ -1,0 +1,41 @@
+{
+  "name": "@atlauncher/eslint-config-atlauncher",
+  "version": "0.1.0",
+  "description": "ATLauncher's ESLint config.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js rules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ATLauncher/style-guide"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ATLauncher/style-guide/issues"
+  },
+  "homepage": "https://github.com/ATLauncher/style-guide",
+  "devDependencies": {
+    "eslint": "~3.19.0",
+    "eslint-plugin-import": "~2.2.0",
+    "eslint-plugin-jsx-a11y": "~4.0.0",
+    "eslint-plugin-react": "~6.10.3"
+  },
+  "peerDependencies": {
+    "eslint": "~3.19.0",
+    "eslint-plugin-jsx-a11y": "~4.0.0",
+    "eslint-plugin-import": "~2.2.0",
+    "eslint-plugin-react": "~6.10.3"
+  },
+  "engines": {
+    "node": ">= 6"
+  }
+}
