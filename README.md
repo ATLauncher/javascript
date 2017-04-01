@@ -2,6 +2,9 @@
 ATLauncher Style Guide is a style guide containing sets of components that we use across all our projects as well as our
 defined styling/linting rules for ESLint and CSSLint.
 
+You can see the published style guide at
+[https://atlauncher.github.io/style-guide/](https://atlauncher.github.io/style-guide/).
+
 ## Aim
 The aim is to create a set of reusable components that can be imported and used across multiple projects at ATLauncher.
 This will keep things looking consistent and provide an easy way to get up and running visually with new projects.

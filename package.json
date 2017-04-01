@@ -4,7 +4,7 @@
   "description": "ATLauncher Styleguide is a styleguide containing sets of components that we use across all our projects.",
   "main": "index.js",
   "scripts": {
-    "build-storybook": "npm run storybook:build",
+    "build-storybook": "build-storybook -c .storybook -o ",
     "lint": "eslint .storybook/ stories/",
     "lint:watch": "esw --watch .storybook/ stories/",
     "precommit": "npm run lint",
