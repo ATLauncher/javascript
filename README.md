@@ -51,5 +51,12 @@ npm install --global lerna
 Then go ahead and run a `npm install` in this directory. This will bootstrap all the packages which will run a npm
 install and link and cross dependencies.
 
+Then to get up and developing with the modules, simply run `npm run storybook:dev` which will start a server at
+`http://127.0.0.1:9001` with the storybook for the `ui-components` package.
+
+To run the linter simply run `npm run lint` which will run the linter on all the packages.
+
+To run tests on all the packages, simply run `npm run test`.
+
 ## Publishing
 TBD

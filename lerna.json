@@ -3,5 +3,13 @@
   "packages": [
     "packages/*"
   ],
+  "changelog": {
+    "repo": "ATLauncher/style-guide",
+    "labels": {
+      "bug": "Bug fix",
+      "cleanup": "Housekeeping"
+    },
+    "cacheDir": ".changelog"
+  },
   "version": "independent"
 }

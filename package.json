@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "husky": "^0.13.3",
     "lerna": "2.0.0-beta.38"
   },
   "scripts": {
@@ -7,9 +8,10 @@
     "clean": "lerna run clean",
     "lint": "lerna run lint",
     "npm:prune": "lerna exec -- npm prune",
+    "precommit": "npm run lint && npm run test",
     "postinstall": "lerna bootstrap",
-    "storybook:dev": "lerna run --scope @atlauncher/ui-components storybook:dev",
-    "storybook:publish": "lerna run --scope @atlauncher/ui-components storybook:publish",
+    "storybook:dev": "lerna run --scope @atlauncher/ui-components storybook:dev --stream",
+    "storybook:publish": "lerna run --scope @atlauncher/ui-components storybook:publish --stream",
     "test": "lerna run test"
   }
 }
