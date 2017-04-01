@@ -1,48 +1,15 @@
 {
-  "name": "@atlauncher/style-guide",
-  "version": "0.1.0",
-  "description": "ATLauncher Styleguide is a styleguide containing sets of components that we use across all our projects.",
-  "main": "index.js",
-  "scripts": {
-    "build-storybook": "build-storybook -c .storybook -o ",
-    "lint": "eslint .storybook/ stories/",
-    "lint:watch": "esw --watch .storybook/ stories/",
-    "precommit": "npm run lint",
-    "storybook": "npm run storybook:dev",
-    "storybook:dev": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o .out",
-    "storybook:publish": "storybook-to-ghpages"
-  },
-  "dependencies": {
-    "react": "~15.4.2",
-    "react-dom": "~15.4.2"
-  },
   "devDependencies": {
-    "@kadira/storybook": "~2.35.3",
-    "@kadira/storybook-deployer": "~1.2.0",
-    "eslint": "~3.19.0",
-    "eslint-plugin-import": "~2.2.0",
-    "eslint-plugin-jsx-a11y": "~4.0.0",
-    "eslint-plugin-react": "~6.10.3",
-    "eslint-watch": "~3.0.1",
-    "husky": "~0.13.3"
+    "lerna": "2.0.0-beta.38"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ATLauncher/style-guide.git"
-  },
-  "keywords": [
-    "atlauncher",
-    "minecraft",
-    "styleguide"
-  ],
-  "author": "Ryan Dowling <ryan.dowling@atlauncher.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ATLauncher/style-guide/issues"
-  },
-  "homepage": "https://github.com/ATLauncher/style-guide#readme",
-  "engines": {
-    "node": ">= 6"
+  "scripts": {
+    "copy-common-files": "node scripts/copy-common-files.js",
+    "clean": "lerna run clean",
+    "lint": "lerna run lint",
+    "npm:prune": "lerna exec -- npm prune",
+    "postinstall": "lerna bootstrap",
+    "storybook:dev": "lerna run --scope @atlauncher/ui-components storybook:dev",
+    "storybook:publish": "lerna run --scope @atlauncher/ui-components storybook:publish",
+    "test": "lerna run test"
   }
 }

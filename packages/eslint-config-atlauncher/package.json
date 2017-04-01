@@ -24,18 +24,20 @@
   },
   "homepage": "https://github.com/ATLauncher/style-guide",
   "devDependencies": {
-    "eslint": "~3.19.0",
-    "eslint-plugin-import": "~2.2.0",
-    "eslint-plugin-jsx-a11y": "~4.0.0",
-    "eslint-plugin-react": "~6.10.3"
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
   },
   "peerDependencies": {
-    "eslint": "~3.19.0",
-    "eslint-plugin-jsx-a11y": "~4.0.0",
-    "eslint-plugin-import": "~2.2.0",
-    "eslint-plugin-react": "~6.10.3"
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.10.3"
   },
   "engines": {
-    "node": ">= 6"
+    "node": ">= 4"
   }
 }

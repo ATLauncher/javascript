@@ -1,38 +1,55 @@
 # ATLauncher Style Guide
-ATLauncher Style Guide is a style guide containing sets of components that we use across all our projects as well as our
-defined styling/linting rules for ESLint and CSSLint.
+This is the style guide for ATLauncher.
 
-You can see the published style guide at
-[https://atlauncher.github.io/style-guide/](https://atlauncher.github.io/style-guide/).
+## Contents
+This repository is a mono repo powered with Lerna and contains the following packages:
 
-## Aim
-The aim is to create a set of reusable components that can be imported and used across multiple projects at ATLauncher.
-This will keep things looking consistent and provide an easy way to get up and running visually with new projects.
+ - babel-preset-atlauncher
+ - eslint-config-atlauncher
+ - ui-components
 
-As well as that, this project aims to home our styling/linting rules which are used on all projects.
+## Packages
+Each package is a single npm package within the `@atlauncher` scope and is independently published from one another.
 
-## Design
-The style guide follows a few principles for it's design.
+Lerna provides the ability to link the modules up with one another so that packages can be devleoped with a
+dependency on another package in this mono repo without the need to publish ahead of time.
 
- - Use BEM naming on all classes created.
- - Prefix all classes created with `atl` so to distinguish style guide components from other components.
+### babel-preset-atlauncher
+This package contains a preset for Babel which is setup to work for ATLauncher's projects.
 
-## Development
-To start developing the style guide you must first install [NodeJS](https://nodejs.org). We highly recommend you use
-[NVM](https://github.com/creationix/nvm) to manage the versions of NodeJS on your system.
+It's intended to support all browsers and versions we need to and be a quick preset to get up and going quickly.
 
-If you're installing NodeJS manually then please make sure you're using the latest 6.x LTS branch.
+- [More Info](https://github.com/ATLauncher/style-guide/blob/master/babel-present-atlauncher/README.md)
+- [NPM](https://www.npmjs.com/package/@atlauncher/babel-present-atlauncher)
 
-If you're using NVM as recommended then you can simply run `nvm use` in this directory to use our currently recommended
-version of NodeJS for this repository.
+### eslint-config-atlauncher
+This package contains our ESLint configs.
 
-Once installed simply run `npm install` to install all the packages needed for this repository.
+This allows all ATLauncher projects to simply extend from this base config to ensure that all code is consistent and
+follows the same styling rules.
 
-### Opening the style guide
-To open the style guide for development run `npm run storybook`. This will spin up a web server on `localhost:9001` that
-you can use to see the style guide and have live updating while developing with it.
+- [More Info](https://github.com/ATLauncher/style-guide/blob/master/eslint-config-atlauncher/README.md)
+- [NPM](https://www.npmjs.com/package/@atlauncher/eslint-config-atlauncher)
 
-## Sub packages
-This repository also contains sub packages which are used to host our ESLint and CSSLint rules/packages. These are
-hosted in the `packges/` directory and each contain their own `README.md` files which you can see for more details on
-each sub package.
+### ui-components
+This package contains all the components used by ATLauncher in it's various projects to provide a consistent visual
+look through all sites and applications.
+
+It also contains configs to build a React Storybook instance to be able to visually identify and play with components.
+
+- [More Info](https://github.com/ATLauncher/style-guide/blob/master/ui-components/README.md)
+- [NPM](https://www.npmjs.com/package/@atlauncher/ui-components)
+- [Storybook](https://atlauncher.github.io/style-guide/)
+
+## Developing
+To get developing with any of these modules, first install Lerna globally:
+
+```bash
+npm install --global lerna
+```
+
+Then go ahead and run a `npm install` in this directory. This will bootstrap all the packages which will run a npm
+install and link and cross dependencies.
+
+## Publishing
+TBD

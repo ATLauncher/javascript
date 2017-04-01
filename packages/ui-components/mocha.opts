@@ -1,0 +1,6 @@
+--recursive components/**/*.spec.js
+--require babel-register
+--require babel-polyfill
+--require ignore-styles
+--require test/setup
+--reporter spec

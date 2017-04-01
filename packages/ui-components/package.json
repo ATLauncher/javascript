@@ -1,0 +1,79 @@
+{
+  "name": "@atlauncher/ui-components",
+  "version": "0.1.0",
+  "description": "ATLauncher UI components.",
+  "main": "index.js",
+  "scripts": {
+    "build-storybook": "build-storybook -c .storybook -o ",
+    "clean": "rimraf .out",
+    "lint": "eslint src/",
+    "lint:watch": "esw --watch src/",
+    "storybook": "npm run storybook:dev",
+    "storybook:dev": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook -o .out",
+    "storybook:publish": "storybook-to-ghpages",
+    "test": "cross-env NODE_ENV=test mocha --opts ./mocha.opts",
+    "test:watch": "cross-env NODE_ENV=test npm run test -- --watch"
+  },
+  "dependencies": {
+    "react": "^15.4.2"
+  },
+  "devDependencies": {
+    "@atlauncher/babel-preset-atlauncher": "^0.1.0",
+    "@atlauncher/eslint-config-atlauncher": "^0.1.0",
+    "@kadira/storybook": "^2.35.3",
+    "@kadira/storybook-addon-knobs": "^1.7.1",
+    "@kadira/storybook-addon-options": "^1.0.2",
+    "@kadira/storybook-deployer": "^1.2.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.6.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.0",
+    "enzyme": "^2.8.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-watch": "^3.0.1",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^9.12.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "mocha": "^3.2.0",
+    "raw-loader": "^0.5.1",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "rimraf": "^2.6.1",
+    "simple-jsdom": "^3.0.0",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0",
+    "storybook-readme": "^2.0.2",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.2"
+  },
+  "peerDependencies": {
+    "react": "^15.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ATLauncher/style-guide.git"
+  },
+  "keywords": [
+    "atlauncher",
+    "minecraft",
+    "styleguide"
+  ],
+  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ATLauncher/style-guide/issues"
+  },
+  "homepage": "https://github.com/ATLauncher/style-guide#readme",
+  "engines": {
+    "node": ">= 4"
+  }
+}
