@@ -1,13 +1,25 @@
+/* eslint-disable filenames/no-index */
+
 const rules = [
-    './rules/base'
+    './rules/base',
+    './rules/filenames'
 ].map(require.resolve);
 
 module.exports = {
+    plugins: [
+        'import',
+        'jsx-a11y',
+        'react',
+        'promise',
+        'no-empty-blocks',
+        'filenames'
+    ],
     extends: [
-        "eslint:recommended",
-        "plugin:import/recommended",
-        "plugin:jsx-a11y/recommended",
-        "plugin:react/recommended",
+        'eslint:recommended',
+        'plugin:import/recommended',
+        'plugin:jsx-a11y/recommended',
+        'plugin:react/recommended',
+        'plugin:promise/recommended',
         ...rules
     ],
     env: {
@@ -25,10 +37,5 @@ module.exports = {
             jsx: true
         }
     },
-    plugins: [
-        'import',
-        'jsx-a11y',
-        'react'
-    ],
     rules: {}
 };
