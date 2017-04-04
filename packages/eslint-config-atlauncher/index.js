@@ -1,8 +1,15 @@
 /* eslint-disable filenames/no-index */
+/* eslint-disable import/no-commonjs */
+
+const configs = [
+    './configs/electron',
+    './configs/react'
+].map(require.resolve);
 
 const rules = [
     './rules/base',
-    './rules/filenames'
+    './rules/plugin-filenames',
+    './rules/plugin-import'
 ].map(require.resolve);
 
 module.exports = {
@@ -16,12 +23,12 @@ module.exports = {
     ],
     extends: [
         'eslint:recommended',
-        'plugin:import/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:react/recommended',
         'plugin:promise/recommended',
         ...rules
     ],
+    configs,
     env: {
         node: true,
         es6: true,
@@ -36,6 +43,5 @@ module.exports = {
             experimentalObjectRestSpread: true,
             jsx: true
         }
-    },
-    rules: {}
+    }
 };

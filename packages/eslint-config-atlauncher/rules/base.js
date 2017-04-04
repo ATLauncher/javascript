@@ -1,3 +1,5 @@
+/* eslint-disable import/no-commonjs */
+
 module.exports = {
     rules: {
         "no-empty": "off", // this is covered by the 'no-empty-blocks' plugin
