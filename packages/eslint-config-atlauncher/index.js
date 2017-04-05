@@ -9,7 +9,9 @@ const configs = [
 const rules = [
     './rules/base',
     './rules/plugin-filenames',
-    './rules/plugin-import'
+    './rules/plugin-import',
+    './rules/plugin-jsx-a11y',
+    './rules/plugin-react'
 ].map(require.resolve);
 
 module.exports = {
