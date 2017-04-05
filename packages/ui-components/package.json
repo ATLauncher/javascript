@@ -8,9 +8,9 @@
     "clean": "rimraf .out",
     "lint": "eslint src/",
     "lint:watch": "esw --watch src/",
-    "storybook": "npm run storybook:dev",
-    "storybook:dev": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o .out",
+    "storybook": "cross-env NODE_ENV=development npm run storybook:dev",
+    "storybook:dev": "cross-env NODE_ENV=development start-storybook -p 9001 -c .storybook",
+    "storybook:build": "cross-env NODE_ENV=production build-storybook -c .storybook -o .out",
     "storybook:publish": "storybook-to-ghpages",
     "test": "cross-env NODE_ENV=test mocha --opts ./mocha.opts",
     "test:watch": "cross-env NODE_ENV=test npm run test -- --watch"
