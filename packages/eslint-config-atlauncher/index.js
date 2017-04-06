@@ -11,6 +11,7 @@ const rules = [
     './rules/plugin-filenames',
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
+    './rules/plugin-promise',
     './rules/plugin-react'
 ].map(require.resolve);
 
@@ -26,7 +27,6 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:jsx-a11y/recommended',
-        'plugin:react/recommended',
         'plugin:promise/recommended',
         ...rules
     ],
