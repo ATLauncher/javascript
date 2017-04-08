@@ -1,5 +1,3 @@
-/* eslint-disable import/no-commonjs */
-
 module.exports = {
     rules: {
         // when using `.then` on a promise, a `.catch` must always be included

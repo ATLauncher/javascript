@@ -1,5 +1,3 @@
-/* eslint-disable import/no-commonjs */
-
 module.exports = {
     rules: {
         // require all emoji to be wrapped in `<span>` tags with an `aria-label` property

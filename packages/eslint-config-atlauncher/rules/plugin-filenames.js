@@ -1,7 +1,6 @@
-/* eslint-disable import/no-commonjs */
-
 module.exports = {
     rules: {
-        "filenames/no-index": "error"
+        // don't allow index.js filename
+        'filenames/no-index': 'error'
     }
 };

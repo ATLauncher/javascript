@@ -1,13 +1,18 @@
-/* eslint-disable filenames/no-index */
-/* eslint-disable import/no-commonjs */
-
 const configs = [
     './configs/electron',
     './configs/react'
 ].map(require.resolve);
 
 const rules = [
-    './rules/base',
+    // eslint rules
+    './rules/possible-errors',
+    './rules/best-practices',
+    './rules/variables',
+    './rules/nodejs',
+    './rules/stylistic-issues',
+    './rules/ecmascript-6',
+
+    // eslint plugins
     './rules/plugin-filenames',
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
@@ -24,12 +29,7 @@ module.exports = {
         'no-empty-blocks',
         'filenames'
     ],
-    extends: [
-        'eslint:recommended',
-        'plugin:jsx-a11y/recommended',
-        'plugin:promise/recommended',
-        ...rules
-    ],
+    extends: rules,
     configs,
     env: {
         node: true,

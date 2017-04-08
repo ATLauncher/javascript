@@ -1,31 +1,55 @@
-/* eslint-disable import/no-commonjs */
-
 module.exports = {
     rules: {
-        // static analysis
+        // ensure imports resolve to a file or package
         'import/no-unresolved': 'error',
+
+        // ensure named imports exist
         'import/named': 'error',
+
+        // ensure a default export is given when importing from a file that exports as default
         'import/default': 'error',
+
+        // ensure imported properties are exported
         'import/namespace': 'error',
+
+        // don't allow importing from absolute paths
         'import/no-absolute-path': 'error',
 
-        // helpful warnings
+        // don't allow invalid exports
         'import/export': 'error',
-        'import/no-named-as-default': 'warn',
-        'import/no-named-as-default-member': 'warn',
+
+        // warn when importing deprecated
         'import/no-deprecated': 'warn',
+
+        // don't allow importing packages when not specified in package.json
         'import/no-extraneous-dependencies': 'error',
+
+        // don't allow importing on `var` or `let`
         'import/no-mutable-exports': 'error',
 
-        // module systems
+        // don't allow unambiguous imports
         'import/unambiguous': 'warn',
+
+        // ensure no commonjs modules
         'import/no-commonjs': 'error',
+
+        // ensure no amd modules
         'import/no-amd': 'error',
 
-        // style guide
-        'import/first': ['error', {'absolute-first': true}],
+        // make sure all imports appear first in files
+        'import/first': ['error', {
+            'absolute-first': true
+        }],
+
+        // don't allow imports from the same modules
         'import/no-duplicates': 'error',
-        'import/extensions': ['error', 'always', {'js': 'never'}],
+
+        // don't use the `.js` extension in the import path for local files
+        'import/extensions': ['error', 'always', {
+            'js': 'never'
+        }],
+
+        // make sure imports are ordered
         'import/order': ['error', {
             'newlines-between': 'always',
             'groups': [
@@ -33,6 +57,10 @@ module.exports = {
                 ['index', 'sibling', 'parent', 'internal']
             ]
         }],
-        'import/newline-after-import': ["error", {'count': 1}]
+
+        // make sure there is one new line after imports
+        'import/newline-after-import': ['error', {
+            'count': 1
+        }]
     }
 };

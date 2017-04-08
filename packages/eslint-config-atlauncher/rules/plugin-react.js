@@ -1,9 +1,7 @@
-/* eslint-disable import/no-commonjs */
-
 module.exports = {
     settings: {
         react: {
-            version: "15.4.0"
+            version: '15.4.0'
         }
     },
     rules: {

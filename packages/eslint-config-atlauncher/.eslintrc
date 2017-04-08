@@ -1,5 +1,11 @@
 {
     "extends": [
         "./index.js"
-    ]
+    ],
+    "rules": {
+        "import/no-commonjs": "off",
+        "filenames/no-index": "off",
+        "import/unambiguous": "off",
+        "quote-props": ["error", "consistent"]
+    }
 }
