@@ -59,4 +59,12 @@ To run the linter simply run `npm run lint` which will run the linter on all the
 To run tests on all the packages, simply run `npm run test`.
 
 ## Publishing
-TBD
+### Production
+```bash
+lerna publish -m "chore: publish release"
+```
+
+### Beta versions
+```bash
+lerna publish --repo-version 0.1.0-beta.1 -m "chore: publish first beta release of 0.1.0-beta.1" --npm-tag=next
+```

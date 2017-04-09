@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/eslint-config-atlauncher",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "ATLauncher's ESLint config.",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,8 @@
     "url": "https://github.com/ATLauncher/style-guide/issues"
   },
   "homepage": "https://github.com/ATLauncher/style-guide",
-  "dependencies": {
-    "@atlauncher/eslint-plugin-atlauncher": "^0.1.0",
+  "devDependencies": {
+    "@atlauncher/eslint-plugin-atlauncher": "^0.0.0",
     "babel-eslint": "^7.2.1",
     "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.2.0",
