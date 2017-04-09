@@ -16,7 +16,7 @@
     "test:watch": "cross-env NODE_ENV=test npm run test -- --watch"
   },
   "dependencies": {
-    "react": "^15.4.2"
+    "react": "^15.5.3"
   },
   "devDependencies": {
     "@atlauncher/babel-preset-atlauncher": "^0.1.0",
@@ -26,10 +26,10 @@
     "@kadira/storybook-addon-knobs": "^1.7.1",
     "@kadira/storybook-addon-options": "^1.0.2",
     "@kadira/storybook-deployer": "^1.2.0",
-    "babel-core": "^6.24.0",
+    "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.1",
     "babel-polyfill": "^6.23.0",
-    "babel-register": "^6.24.0",
+    "babel-register": "^6.24.1",
     "chai": "^3.5.0",
     "chai-enzyme": "^0.6.1",
     "cross-env": "^4.0.0",
@@ -48,18 +48,18 @@
     "less-loader": "^4.0.3",
     "mocha": "^3.2.0",
     "raw-loader": "^0.5.1",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.3",
     "rimraf": "^2.6.1",
     "simple-jsdom": "^3.0.0",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.9.0",
     "storybook-readme": "^2.0.2",
     "style-loader": "^0.16.1",
-    "webpack": "^2.3.2"
+    "webpack": "^2.3.3"
   },
   "peerDependencies": {
-    "react": "^15.4.2"
+    "react": "^15.5.3"
   },
   "repository": {
     "type": "git",
