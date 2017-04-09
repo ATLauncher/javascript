@@ -68,8 +68,8 @@ module.exports = {
         // requires all components to be written as ES6 classes and not via `React.createClass`
         'react/prefer-es6-class': 'error',
 
-        // ensures stateless components aren't doing more than they should
-        'react/prefer-stateless-function': 'error',
+        // ensures stateless components are used where possible over `React.Component` but allow `React.PureComponent`
+        'react/prefer-stateless-function': ['warn', {ignorePureComponents: true}],
 
         // ensures PropType's are written and contain all properties are added into it
         'react/prop-types': 'error',

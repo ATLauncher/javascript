@@ -16,8 +16,16 @@ module.exports = {
             properties: 'always'
         }],
 
-        // all comments should start with a lowercase letter
-        'capitalized-comments': ['error', 'never'],
+        // all comments should start with a lowercase letter unless in a block comment
+        'capitalized-comments': ['error', 'never', {
+            line: {
+                ignoreInlineComments: true
+            },
+            block: {
+                ignoreInlineComments: true,
+                ignorePattern: '.'
+            }
+        }],
 
         // don't allow dangling commas
         'comma-dangle': ['error', 'never'],
@@ -179,7 +187,7 @@ module.exports = {
             allowTemplateLiterals: true
         }],
 
-        // warn when not using jsdoc
+        // warn when not using jsdoc unless function name matches one in the ignore list
         'require-jsdoc': ['warn', {
             require: {
                 FunctionDeclaration: true,

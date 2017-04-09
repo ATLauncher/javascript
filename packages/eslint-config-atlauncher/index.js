@@ -1,8 +1,3 @@
-const configs = [
-    './configs/electron',
-    './configs/react'
-].map(require.resolve);
-
 const rules = [
     // eslint rules
     './rules/possible-errors',
@@ -13,7 +8,6 @@ const rules = [
     './rules/ecmascript-6',
 
     // eslint plugins
-    './rules/plugin-filenames',
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
     './rules/plugin-promise',
@@ -30,7 +24,6 @@ module.exports = {
         'filenames'
     ],
     extends: rules,
-    configs,
     env: {
         node: true,
         es6: true,

@@ -26,7 +26,6 @@
   "devDependencies": {
     "babel-eslint": "^7.2.1",
     "eslint": "^3.19.0",
-    "eslint-plugin-filenames": "^1.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-no-empty-blocks": "0.0.2",
@@ -36,8 +35,10 @@
   "peerDependencies": {
     "babel-eslint": "^7.2.1",
     "eslint": "^3.19.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-no-empty-blocks": "0.0.2",
+    "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.3"
   },
   "engines": {

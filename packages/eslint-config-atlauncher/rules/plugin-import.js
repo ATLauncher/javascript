@@ -46,21 +46,12 @@ module.exports = {
 
         // don't use the `.js` extension in the import path for local files
         'import/extensions': ['error', 'always', {
-            'js': 'never'
-        }],
-
-        // make sure imports are ordered
-        'import/order': ['error', {
-            'newlines-between': 'always',
-            'groups': [
-                ['external', 'builtin'],
-                ['index', 'sibling', 'parent', 'internal']
-            ]
+            js: 'never'
         }],
 
         // make sure there is one new line after imports
         'import/newline-after-import': ['error', {
-            'count': 1
+            count: 1
         }]
     }
 };

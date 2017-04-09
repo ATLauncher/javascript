@@ -1,5 +1,5 @@
 module.exports = {
     rules: {
-        'import/core-modules': ['electron'],
+        'import/core-modules': ['error', 'electron'],
     }
 };
