@@ -8,6 +8,7 @@ const rules = [
     './rules/ecmascript-6',
 
     // eslint plugins
+    './rules/plugin-atlauncher',
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
     './rules/plugin-promise',
@@ -21,7 +22,8 @@ module.exports = {
         'react',
         'promise',
         'no-empty-blocks',
-        'filenames'
+        'filenames',
+        '@atlauncher/atlauncher'
     ],
     extends: rules,
     env: {

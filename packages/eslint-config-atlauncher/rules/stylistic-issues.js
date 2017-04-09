@@ -187,16 +187,6 @@ module.exports = {
             allowTemplateLiterals: true
         }],
 
-        // warn when not using jsdoc unless function name matches one in the ignore list
-        'require-jsdoc': ['warn', {
-            require: {
-                FunctionDeclaration: true,
-                MethodDefinition: true,
-                ClassDeclaration: true,
-                ArrowFunctionExpression: true
-            }
-        }],
-
         // require semi colons
         'semi': 'error',
 

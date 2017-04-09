@@ -21,6 +21,7 @@
   "devDependencies": {
     "@atlauncher/babel-preset-atlauncher": "^0.1.0",
     "@atlauncher/eslint-config-atlauncher": "^0.1.0",
+    "@atlauncher/eslint-plugin-atlauncher": "^0.1.0",
     "@kadira/storybook": "^2.35.3",
     "@kadira/storybook-addon-knobs": "^1.7.1",
     "@kadira/storybook-addon-options": "^1.0.2",
