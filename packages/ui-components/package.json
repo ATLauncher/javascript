@@ -36,6 +36,7 @@
     "css-loader": "^0.28.0",
     "enzyme": "^2.8.0",
     "eslint": "^3.19.0",
+    "eslint-plugin-filenames": "^1.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-no-empty-blocks": "0.0.2",
