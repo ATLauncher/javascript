@@ -66,5 +66,5 @@ lerna publish -m "chore: publish release"
 
 ### Beta versions
 ```bash
-lerna publish --repo-version 0.1.0-beta.1 -m "chore: publish first beta release of 0.1.0-beta.1" --npm-tag=next
+lerna publish --repo-version 0.1.0-beta.1 -m "chore: publish beta release" --npm-tag=next
 ```
