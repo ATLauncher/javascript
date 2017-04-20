@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/babel-preset-atlauncher",
-  "version": "0.1.0-0",
+  "version": "0.1.0-1",
   "description": "ATLauncher's babel preset.",
   "main": "index.js",
   "repository": {
@@ -17,13 +17,6 @@
   },
   "homepage": "https://github.com/ATLauncher/style-guide",
   "dependencies": {
-    "babel-plugin-transform-react-remove-prop-types": "^0.3.3",
-    "babel-plugin-transform-regenerator": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
-  },
-  "peerDependencies": {
     "babel-plugin-transform-react-remove-prop-types": "^0.3.3",
     "babel-plugin-transform-regenerator": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
