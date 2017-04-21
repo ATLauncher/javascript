@@ -92,7 +92,7 @@ module.exports = {
                 object: 'object',
                 String: 'string'
             },
-            requireReturn: true,
+            requireReturn: false,
             requireReturnType: true,
             requireParamDescription: false,
             requireReturnDescription: false
