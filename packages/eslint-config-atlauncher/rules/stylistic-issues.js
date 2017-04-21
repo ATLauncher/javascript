@@ -113,7 +113,7 @@ module.exports = {
 
         // require constructors to have first letter capitalised unless the constructor ends in '.deafult'
         'new-cap': ['error', {
-            newIsCapExceptionPattern: "\.default$"
+            newIsCapExceptionPattern: '.default$'
         }],
 
         // always require parenthesis with new keyword even without parameters
