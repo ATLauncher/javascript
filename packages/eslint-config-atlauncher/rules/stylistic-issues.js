@@ -196,7 +196,10 @@ module.exports = {
         'space-before-blocks': ['error', 'always'],
 
         // don't allow a space before the parenthesis in functions so not `function ()` but `function()`
-        'space-before-function-paren': ['error', 'never'],
+        'space-before-function-paren': ['error', {
+            anonymous: 'always',
+            named: 'never'
+        }],
 
         // don't allow spaces in parenthesis
         'space-in-parens': ['error', 'never'],
