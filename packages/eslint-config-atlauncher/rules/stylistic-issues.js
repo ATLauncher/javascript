@@ -111,8 +111,10 @@ module.exports = {
             max: 3
         }],
 
-        // require constructors to have first letter capitalised
-        'new-cap': 'error',
+        // require constructors to have first letter capitalised unless the constructor ends in '.deafult'
+        'new-cap': ['error', {
+            newIsCapExceptionPattern: "\.default$"
+        }],
 
         // always require parenthesis with new keyword even without parameters
         'new-parens': 'error',
