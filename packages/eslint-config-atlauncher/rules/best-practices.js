@@ -129,9 +129,6 @@ module.exports = {
         // don't allow loops which don't modify the conditional
         'no-unmodified-loop-condition': 'error',
 
-        // don't allow unused expressions
-        'no-unused-expressions': 'error',
-
         // don't allow using `call` or `apply` without an extra this parameter
         'no-useless-call': 'error',
 
