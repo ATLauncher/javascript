@@ -3,9 +3,6 @@ module.exports = {
         // ensure that all Array methods that require a return in the callback function have one
         'array-callback-return': 'error',
 
-        // if a class method doesn't use this, it should be made static
-        'class-methods-use-this': 'error',
-
         // warn if there are more than 20 different branches in a fynction
         'complexity': ['warn', 20],
 
