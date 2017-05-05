@@ -30,9 +30,6 @@ module.exports = {
         // don't allow unambiguous imports
         'import/unambiguous': 'warn',
 
-        // ensure no commonjs modules
-        'import/no-commonjs': 'error',
-
         // ensure no amd modules
         'import/no-amd': 'error',
 
