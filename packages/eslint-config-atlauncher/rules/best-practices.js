@@ -37,7 +37,11 @@ module.exports = {
         'no-else-return': 'error',
 
         // don't allow empty functions unless an arrow function
-        'no-empty-function': ['error', {allow: ['arrowFunctions']}],
+        'no-empty-function': ['error', {
+            allow: [
+                'arrowFunctions',
+            ],
+        }],
 
         // don't allow empty destructuring
         'no-empty-pattern': 'error',
@@ -160,6 +164,6 @@ module.exports = {
         'wrap-iife': 'error',
 
         // when comparing variables with non variables, the variable must be first
-        'yoda': 'error'
-    }
+        'yoda': 'error',
+    },
 };

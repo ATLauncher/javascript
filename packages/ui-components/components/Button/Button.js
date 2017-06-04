@@ -9,11 +9,11 @@ import './Button.less';
 class Button extends React.PureComponent {
     static propTypes = {
         onClick: PropTypes.func,
-        text: PropTypes.string.isRequired
+        text: PropTypes.string.isRequired,
     };
 
     static defaultProps = {
-        onClick: () => {}
+        onClick: () => {},
     };
 
     render() {

@@ -31,7 +31,9 @@ module.exports = {
         'no-duplicate-case': 'error',
 
         // don't allow empty block statements except for catch blocks
-        'no-empty': ['error', {allowEmptyCatch: true}],
+        'no-empty': ['error', {
+            allowEmptyCatch: true,
+        }],
 
         // don't allow empty character classes in regex so `^test[]$` is invalid but `^test[1-9]$` is valid
         'no-empty-character-class': 'error',
@@ -90,15 +92,15 @@ module.exports = {
                 Boolean: 'boolean',
                 Number: 'number',
                 object: 'object',
-                String: 'string'
+                String: 'string',
             },
             requireReturn: false,
             requireReturnType: true,
             requireParamDescription: false,
-            requireReturnDescription: false
+            requireReturnDescription: false,
         }],
 
         // ensure valid typeof checks are used
-        'valid-typeof': 'error'
-    }
+        'valid-typeof': 'error',
+    },
 };

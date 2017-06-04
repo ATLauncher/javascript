@@ -16,6 +16,6 @@ module.exports = {
         'promise/no-nesting': 'error',
 
         // prefer using await to `.then`
-        'promise/prefer-await-to-then': 'error'
-    }
+        'promise/prefer-await-to-then': 'error',
+    },
 };

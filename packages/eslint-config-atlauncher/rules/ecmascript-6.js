@@ -9,7 +9,7 @@ module.exports = {
         // require spaces before and after the `=>` in an arrow function
         'arrow-spacing': ['error', {
             before: true,
-            after: true
+            after: true,
         }],
 
         // require calling super when defining a constructor in a sub class
@@ -18,7 +18,7 @@ module.exports = {
         // require generators to be defined as `function*()`
         'generator-star-spacing': ['error', {
             before: false,
-            after: false
+            after: false,
         }],
 
         // don't allow reassigning class definitions
@@ -76,6 +76,6 @@ module.exports = {
         'template-curly-spacing': ['error', 'never'],
 
         // require space after, but not before, yield
-        'yield-star-spacing': ['error', 'after']
-    }
+        'yield-star-spacing': ['error', 'after'],
+    },
 };

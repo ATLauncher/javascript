@@ -15,7 +15,7 @@ module.exports = {
         docs: {
             description: "Ensures functions have JSDoc comments",
             category: "Stylistic Issues",
-            recommended: false
+            recommended: false,
         },
 
         schema: [
@@ -26,31 +26,31 @@ module.exports = {
                         type: "object",
                         properties: {
                             ClassDeclaration: {
-                                type: "boolean"
+                                type: "boolean",
                             },
                             MethodDefinition: {
-                                type: "boolean"
+                                type: "boolean",
                             },
                             FunctionDeclaration: {
-                                type: "boolean"
+                                type: "boolean",
                             },
                             ArrowFunctionExpression: {
-                                type: "boolean"
-                            }
+                                type: "boolean",
+                            },
                         },
-                        additionalProperties: false
+                        additionalProperties: false,
                     },
                     ignore: {
                         type: "array",
                         items: {
-                            type: "string"
+                            type: "string",
                         },
-                        uniqueItems: true
-                    }
+                        uniqueItems: true,
+                    },
                 },
-                additionalProperties: false
-            }
-        ]
+                additionalProperties: false,
+            },
+        ],
     },
 
     create: function(context) {
@@ -58,7 +58,7 @@ module.exports = {
         const DEFAULT_OPTIONS = {
             FunctionDeclaration: true,
             MethodDefinition: false,
-            ClassDeclaration: false
+            ClassDeclaration: false,
         };
         const options = Object.assign(DEFAULT_OPTIONS, context.options[0] && context.options[0].require || {});
         const ignore = context.options[0] && context.options[0].ignore || [];

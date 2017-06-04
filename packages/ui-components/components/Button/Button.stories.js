@@ -17,5 +17,5 @@ stories.add(
     'with text',
     () => (
         <Button text={text('Label', 'Hello Button')} onClick={action('clicked')} />
-    )
+    ),
 );

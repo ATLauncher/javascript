@@ -2,7 +2,7 @@ const base = require('./index');
 
 const rules = base.extends.concat([
     // configs
-    './configs/electron'
+    './configs/electron',
 ].map(require.resolve));
 
 module.exports = {
@@ -10,5 +10,5 @@ module.exports = {
     extends: rules,
     env:  base.env,
     parser:  base.parser,
-    parserOptions:  base.parserOptions
+    parserOptions:  base.parserOptions,
 };

@@ -73,6 +73,6 @@ module.exports = {
         'jsx-a11y/media-has-caption': 'warn',
 
         // don't allow tabIndex on non interactive elements
-        'jsx-a11y/no-noninteractive-tabindex': 'error'
-    }
+        'jsx-a11y/no-noninteractive-tabindex': 'error',
+    },
 };

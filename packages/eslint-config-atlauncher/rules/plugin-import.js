@@ -35,7 +35,7 @@ module.exports = {
 
         // make sure all imports appear first in files
         'import/first': ['error', {
-            'absolute-first': true
+            'absolute-first': true,
         }],
 
         // don't allow imports from the same modules
@@ -43,12 +43,12 @@ module.exports = {
 
         // don't use the `.js` extension in the import path for local files
         'import/extensions': ['error', 'always', {
-            js: 'never'
+            js: 'never',
         }],
 
         // make sure there is one new line after imports
         'import/newline-after-import': ['error', {
-            count: 1
-        }]
-    }
+            count: 1,
+        }],
+    },
 };

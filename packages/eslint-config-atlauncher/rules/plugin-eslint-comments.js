@@ -22,8 +22,8 @@ module.exports = {
                 'eslint-env',
                 'exported',
                 'global',
-                'globals'
-            ]
-        }]
-    }
+                'globals',
+            ],
+        }],
+    },
 };

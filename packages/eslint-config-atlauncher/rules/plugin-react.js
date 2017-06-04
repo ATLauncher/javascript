@@ -1,18 +1,28 @@
 module.exports = {
     settings: {
         react: {
-            version: '15.5.4'
-        }
+            version: '15.5.4',
+        },
     },
     rules: {
         // require setting of `displayName` property on components
         'react/display-name': 'error',
 
         // forbids the use of `className` and `style` properties on components, only on root elements (div, span, etc)
-        'react/forbid-component-props': ['error', {forbid: ['className', 'style']}],
+        'react/forbid-component-props': ['error', {
+            forbid: [
+                'className',
+                'style',
+            ],
+        }],
 
         // don't allow the use of any or array PropTypes as they're too vague
-        'react/forbid-prop-types': ['error', {forbid: ['any', 'array']}],
+        'react/forbid-prop-types': ['error', {
+            forbid: [
+                'any',
+                'array',
+            ],
+        }],
 
         // don't allow using other components propTypes unless exported out the component
         'react/forbid-foreign-prop-types': 'error',
@@ -48,7 +58,9 @@ module.exports = {
         'react/no-is-mounted': 'error',
 
         // don't allow more than one component per file, even stateless components
-        'react/no-multi-comp': ['error', {ignoreStateless: false}],
+        'react/no-multi-comp': ['error', {
+            ignoreStateless: false,
+        }],
 
         // don't allow using the return value from `ReactDOM.render()`
         'react/no-render-return-value': 'error',
@@ -69,7 +81,9 @@ module.exports = {
         'react/prefer-es6-class': 'error',
 
         // ensures stateless components are used where possible over `React.Component` but allow `React.PureComponent`
-        'react/prefer-stateless-function': ['warn', {ignorePureComponents: true}],
+        'react/prefer-stateless-function': ['warn', {
+            ignorePureComponents: true,
+        }],
 
         // ensures PropType's are written and contain all properties are added into it
         'react/prop-types': 'error',
@@ -92,14 +106,14 @@ module.exports = {
                 'static-methods',
                 'lifecycle',
                 'everything-else',
-                'rendering'
+                'rendering',
             ],
             groups: {
                 rendering: [
                     '/^render.+$/',
-                    'render'
-                ]
-            }
+                    'render',
+                ],
+            },
         }],
 
         // require style properties to be defined in a variable
@@ -121,7 +135,11 @@ module.exports = {
         'react/jsx-equals-spacing': ['error', 'never'],
 
         // only allow naming components as .js and not .jsx
-        'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
+        'react/jsx-filename-extension': ['error', {
+            extensions: [
+                '.js',
+            ],
+        }],
 
         // require any multiline components to have the first property on a new line
         'react/jsx-first-prop-new-line': ['error', 'multiline'],
@@ -129,7 +147,7 @@ module.exports = {
         // ensure all properties use event handlers prefixed with `on` and class methods prefixed with `handle`
         'react/jsx-handler-names': ['error', {
             eventHandlerPrefix: 'handle',
-            eventHandlerPropPrefix: 'on'
+            eventHandlerPropPrefix: 'on',
         }],
 
         // ensure all indents in JSX use 4 spaces
@@ -160,7 +178,7 @@ module.exports = {
         'react/jsx-tag-spacing': ['error', {
             closingSlash: 'never',
             beforeSelfClosing: 'always',
-            afterOpening: 'never'
+            afterOpening: 'never',
         }],
 
         // ensures components that import React don't show it as being unused
@@ -173,6 +191,6 @@ module.exports = {
         'react/jsx-wrap-multilines': 'error',
 
         // prevent usage of setState in componentWillUpdate
-        'react/no-will-update-set-state': 'error'
-    }
+        'react/no-will-update-set-state': 'error',
+    },
 };

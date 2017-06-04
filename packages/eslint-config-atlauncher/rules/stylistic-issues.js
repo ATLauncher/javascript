@@ -8,32 +8,32 @@ module.exports = {
 
         // set the styling of braces and don't allow single lines
         'brace-style': ['error', '1tbs', {
-            allowSingleLine: false
+            allowSingleLine: false,
         }],
 
         // require camelCase
         'camelcase': ['error', {
-            properties: 'always'
+            properties: 'always',
         }],
 
         // all comments should start with a lowercase letter unless in a block comment
         'capitalized-comments': ['error', 'never', {
             line: {
-                ignoreInlineComments: true
+                ignoreInlineComments: true,
             },
             block: {
                 ignoreInlineComments: true,
-                ignorePattern: '.'
-            }
+                ignorePattern: '.',
+            },
         }],
 
-        // don't allow dangling commas
-        'comma-dangle': ['error', 'never'],
+        // require dangling commas
+        'comma-dangle': ['error', 'always-multiline'],
 
         // require spaces after commas
         'comma-spacing': ['error', {
             before: false,
-            after: true
+            after: true,
         }],
 
         // commas should come last rather than on the new line
@@ -53,7 +53,7 @@ module.exports = {
 
         // require 4 spaces for indentation
         'indent': ['error', 4, {
-            SwitchCase: 4
+            SwitchCase: 4,
         }],
 
         // require double quotes for JSX attributes
@@ -63,13 +63,13 @@ module.exports = {
         'key-spacing': ['error', {
             beforeColon: false,
             afterColon: true,
-            mode: 'strict'
+            mode: 'strict',
         }],
 
         // ensure consistency around spacing with keywords
         'keyword-spacing': ['error', {
             before: true,
-            after: true
+            after: true,
         }],
 
         // ensure unix line endings are used
@@ -84,7 +84,7 @@ module.exports = {
             allowObjectStart: true,
             allowObjectEnd: false,
             allowArrayStart: true,
-            allowArrayEnd: false
+            allowArrayEnd: false,
         }],
 
         // ensure there are newlines around directives
@@ -92,7 +92,7 @@ module.exports = {
 
         // warn when nesting more than 3 blocks
         'max-depth': ['warn', {
-            max: 3
+            max: 3,
         }],
 
         // ensure mx line length of 120 characters
@@ -103,17 +103,17 @@ module.exports = {
             ignoreUrls: false,
             ignoreStrings: false,
             ignoreTemplateLiterals: false,
-            ignoreRegExpLiterals: false
+            ignoreRegExpLiterals: false,
         }],
 
         // don't allow nesting of callbacks more than 3 layers
         'max-nested-callbacks': ['warn', {
-            max: 3
+            max: 3,
         }],
 
-        // require constructors to have first letter capitalised unless the constructor ends in '.deafult'
+        // require constructors to have first letter capitalised unless the constructor ends in '.default'
         'new-cap': ['error', {
-            newIsCapExceptionPattern: '.default$'
+            newIsCapExceptionPattern: '.default$',
         }],
 
         // always require parenthesis with new keyword even without parameters
@@ -124,7 +124,7 @@ module.exports = {
 
         // warn when not using a new line for each call in a chain over 4 deep
         'newline-per-chained-call': ['warn', {
-            ignoreChainWithDepth: 4
+            ignoreChainWithDepth: 4,
         }],
 
         // don't allow creating an array with `new Array` unless only has one parameter for manually sized array
@@ -145,7 +145,7 @@ module.exports = {
         // don't allow more than 1 empty line in a row
         'no-multiple-empty-lines': ['error', {
             max: 1,
-            maxEOF: 1
+            maxEOF: 1,
         }],
 
         // don't allow nested ternary operators
@@ -168,7 +168,7 @@ module.exports = {
 
         // require new lines for each property in object
         'object-property-newline': ['error', {
-            allowMultiplePropertiesPerLine: false
+            allowMultiplePropertiesPerLine: false,
         }],
 
         // only allow one variable to be declared per `var`, `let` or `const`
@@ -186,7 +186,7 @@ module.exports = {
         // only allow single quotes unless to avoid escaping
         'quotes': ['error', 'single', {
             avoidEscape: true,
-            allowTemplateLiterals: true
+            allowTemplateLiterals: true,
         }],
 
         // require semi colons
@@ -198,7 +198,7 @@ module.exports = {
         // don't allow a space before the parenthesis in functions so not `function ()` but `function()`
         'space-before-function-paren': ['error', {
             anonymous: 'always',
-            named: 'never'
+            named: 'never',
         }],
 
         // don't allow spaces in parenthesis
@@ -211,6 +211,6 @@ module.exports = {
         'space-unary-ops': 'error',
 
         // requires a space before comments
-        'spaced-comment': 'error'
-    }
+        'spaced-comment': 'error',
+    },
 };

@@ -10,6 +10,6 @@ module.exports = {
         'no-new-require': 'error',
 
         // don't allow string concatenation of paths
-        'no-path-concat': 'error'
-    }
+        'no-path-concat': 'error',
+    },
 };

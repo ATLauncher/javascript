@@ -13,7 +13,7 @@ const rules = [
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
     './rules/plugin-promise',
-    './rules/plugin-react'
+    './rules/plugin-react',
 ].map(require.resolve);
 
 module.exports = {
@@ -25,14 +25,14 @@ module.exports = {
         'jsx-a11y',
         'no-empty-blocks',
         'promise',
-        'react'
+        'react',
     ],
     extends: rules,
     env: {
         node: true,
         es6: true,
         browser: true,
-        mocha: true
+        mocha: true,
     },
     parser: 'babel-eslint',
     parserOptions: {
@@ -40,7 +40,7 @@ module.exports = {
         sourceType: 'module',
         ecmaFeatures: {
             experimentalObjectRestSpread: true,
-            jsx: true
-        }
-    }
+            jsx: true,
+        },
+    },
 };

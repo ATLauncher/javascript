@@ -6,11 +6,11 @@ module.exports = {
                 FunctionDeclaration: true,
                 MethodDefinition: true,
                 ClassDeclaration: true,
-                ArrowFunctionExpression: true
+                ArrowFunctionExpression: true,
             },
             ignore: [
-                'render'
-            ]
-        }]
-    }
+                'render',
+            ],
+        }],
+    },
 };

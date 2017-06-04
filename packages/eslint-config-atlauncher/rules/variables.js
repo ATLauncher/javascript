@@ -13,7 +13,7 @@ module.exports = {
         'no-unused-vars': 'error',
 
         // don't allow using a variable before it's defined
-        'no-use-before-define': 'error'
-    }
+        'no-use-before-define': 'error',
+    },
 };
 
