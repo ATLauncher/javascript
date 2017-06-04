@@ -3,6 +3,7 @@
         "./index.js"
     ],
     "rules": {
+        "immutable/no-mutation": "off",
         "filenames/no-index": "off",
         "import/unambiguous": "off",
         "quote-props": ["error", "consistent"]
