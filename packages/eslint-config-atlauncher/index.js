@@ -13,6 +13,7 @@ const rules = [
     './rules/plugin-immutable',
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
+    './rules/plugin-new-with-error',
     './rules/plugin-promise',
     './rules/plugin-react',
 ].map(require.resolve);
@@ -25,7 +26,7 @@ module.exports = {
         'immutable',
         'import',
         'jsx-a11y',
-        'no-empty-blocks',
+        'new-with-error',
         'promise',
         'react',
     ],

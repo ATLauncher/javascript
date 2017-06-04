@@ -32,7 +32,7 @@
     "eslint-plugin-immutable": "^1.0.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-no-empty-blocks": "^0.0.2",
+    "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1"
   },
@@ -45,7 +45,7 @@
     "eslint-plugin-immutable": "^1.0.0",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-no-empty-blocks": "^0.0.2",
+    "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1"
   },
