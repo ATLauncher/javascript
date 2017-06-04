@@ -14,6 +14,7 @@ const rules = [
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
     './rules/plugin-new-with-error',
+    './rules/plugin-no-loops',
     './rules/plugin-promise',
     './rules/plugin-react',
 ].map(require.resolve);
@@ -27,6 +28,7 @@ module.exports = {
         'import',
         'jsx-a11y',
         'new-with-error',
+        'no-loops',
         'promise',
         'react',
     ],
