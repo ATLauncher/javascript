@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "husky": "^0.13.3",
-    "lerna": "2.0.0-rc.1"
+    "husky": "^0.13.4",
+    "lerna": "2.0.0-rc.5"
   },
   "scripts": {
     "clean": "lerna run clean",

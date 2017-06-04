@@ -61,10 +61,10 @@ To run tests on all the packages, simply run `npm run test`.
 ## Publishing
 ### Production
 ```bash
-lerna publish -m "chore: publish release"
+lerna publish -m "chore: publish release" --conventional-commits
 ```
 
 ### Beta versions
 ```bash
-lerna publish -m "chore: publish beta release" --npm-tag=next
+lerna publish -m "chore: publish beta release" --npm-tag=next --conventional-commits
 ```

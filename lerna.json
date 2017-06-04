@@ -1,15 +1,7 @@
 {
-  "lerna": "2.0.0-rc.1",
+  "lerna": "2.0.0-rc.5",
   "packages": [
     "packages/*"
   ],
-  "changelog": {
-    "repo": "ATLauncher/style-guide",
-    "labels": {
-      "bug": "Bug fix",
-      "cleanup": "Housekeeping"
-    },
-    "cacheDir": ".changelog"
-  },
   "version": "independent"
 }

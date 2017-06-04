@@ -25,14 +25,14 @@
   "homepage": "https://github.com/ATLauncher/style-guide",
   "devDependencies": {
     "@atlauncher/eslint-plugin-atlauncher": "^0.1.0",
-    "babel-eslint": "^7.2.2",
+    "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
     "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-no-empty-blocks": "^0.0.2",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-plugin-react": "^7.0.1"
   },
   "peerDependencies": {
     "@atlauncher/eslint-plugin-atlauncher": "^0.1.0",

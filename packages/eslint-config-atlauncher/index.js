@@ -1,11 +1,11 @@
 const rules = [
     // eslint rules
-    './rules/possible-errors',
     './rules/best-practices',
-    './rules/variables',
-    './rules/nodejs',
-    './rules/stylistic-issues',
     './rules/ecmascript-6',
+    './rules/nodejs',
+    './rules/possible-errors',
+    './rules/stylistic-issues',
+    './rules/variables',
 
     // eslint plugins
     './rules/plugin-atlauncher',
@@ -17,13 +17,13 @@ const rules = [
 
 module.exports = {
     plugins: [
+        '@atlauncher/atlauncher',
+        'filenames',
         'import',
         'jsx-a11y',
-        'react',
-        'promise',
         'no-empty-blocks',
-        'filenames',
-        '@atlauncher/atlauncher'
+        'promise',
+        'react'
     ],
     extends: rules,
     env: {
