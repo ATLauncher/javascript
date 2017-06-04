@@ -9,6 +9,7 @@ const rules = [
 
     // eslint plugins
     './rules/plugin-atlauncher',
+    './rules/plugin-eslint-comments',
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
     './rules/plugin-promise',
@@ -18,6 +19,7 @@ const rules = [
 module.exports = {
     plugins: [
         '@atlauncher/atlauncher',
+        'eslint-comments',
         'filenames',
         'import',
         'jsx-a11y',
