@@ -1,7 +1,7 @@
 module.exports = {
     settings: {
         react: {
-            version: '15.5.3'
+            version: '15.5.4'
         }
     },
     rules: {
@@ -157,7 +157,11 @@ module.exports = {
         'react/jsx-pascal-case': 'error',
 
         // require a space before self closing tags such as `<A prop={prop} />` rather than `<A prop={prop}/>`
-        'react/jsx-space-before-closing': 'error',
+        'react/jsx-tag-spacing': ['error', {
+            closingSlash: 'never',
+            beforeSelfClosing: 'always',
+            afterOpening: 'never'
+        }],
 
         // ensures components that import React don't show it as being unused
         'react/jsx-uses-react': 'error',
@@ -166,6 +170,9 @@ module.exports = {
         'react/jsx-uses-vars': 'error',
 
         // ensures multiline JSX is wrapped within parenthesis
-        'react/jsx-wrap-multilines': 'error'
+        'react/jsx-wrap-multilines': 'error',
+
+        // prevent usage of setState in componentWillUpdate
+        'react/no-will-update-set-state': 'error'
     }
 };

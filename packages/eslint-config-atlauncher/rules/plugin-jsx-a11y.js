@@ -31,7 +31,7 @@ module.exports = {
         'jsx-a11y/iframe-has-title': 'error',
 
         // require all image tags to have an `alt` property
-        'jsx-a11y/img-has-alt': 'error',
+        'jsx-a11y/alt-text': 'error',
 
         // don't allow the workds `image`, `photo` or `picture` in image `alt` property
         'jsx-a11y/img-redundant-alt': 'error',
@@ -67,6 +67,12 @@ module.exports = {
         'jsx-a11y/scope': 'error',
 
         // don't allow positive values for `tabIndex`
-        'jsx-a11y/tabindex-no-positive': 'error'
+        'jsx-a11y/tabindex-no-positive': 'error',
+
+        // warn when media doesn't have caption`
+        'jsx-a11y/media-has-caption': 'warn',
+
+        // don't allow tabIndex on non interactive elements
+        'jsx-a11y/no-noninteractive-tabindex': 'error'
     }
 };
