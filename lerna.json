@@ -3,5 +3,17 @@
   "packages": [
     "packages/*"
   ],
+  "commands": {
+    "publish": {
+      "ignore": [
+        "*.md",
+        ".nvmrc",
+        ".eslintrc",
+        ".gitignore",
+        ".npmignore",
+        "mocha.opts"
+      ]
+    }
+  },
   "version": "independent"
 }
