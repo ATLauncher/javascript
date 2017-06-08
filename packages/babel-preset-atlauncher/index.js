@@ -8,6 +8,7 @@ module.exports = function() {
             require('babel-preset-react')
         ],
         plugins: [
+            require('babel-plugin-transform-runtime'),
             require('babel-plugin-transform-regenerator'),
             require('babel-plugin-transform-react-remove-prop-types').default,
         ],
