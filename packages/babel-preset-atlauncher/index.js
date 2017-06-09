@@ -16,7 +16,6 @@ module.exports = function() {
             require('babel-plugin-transform-function-bind'),
             require('babel-plugin-transform-object-rest-spread'),
             require('babel-plugin-transform-runtime'),
-            require('babel-plugin-transform-regenerator'),
             require('babel-plugin-transform-react-remove-prop-types').default,
         ],
     };
