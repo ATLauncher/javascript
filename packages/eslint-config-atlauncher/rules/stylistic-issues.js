@@ -53,7 +53,7 @@ module.exports = {
 
         // require 4 spaces for indentation
         'indent': ['error', 4, {
-            SwitchCase: 4,
+            SwitchCase: 1,
         }],
 
         // require double quotes for JSX attributes
