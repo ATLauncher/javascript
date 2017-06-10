@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/eslint-config-atlauncher",
-  "version": "0.1.0-7",
+  "version": "0.1.0-8",
   "description": "ATLauncher's ESLint config.",
   "main": "index.js",
   "scripts": {
