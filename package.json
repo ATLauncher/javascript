@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "husky": "^0.14.0",
+    "husky": "^0.14.1",
     "lerna": "2.0.0-rc.5"
   },
   "scripts": {
@@ -13,6 +13,7 @@
     "storybook:publish": "lerna run --scope @atlauncher/ui-components storybook:publish --stream",
     "test": "lerna run test"
   },
+  "engineStrict": true,
   "engines": {
     "node": ">= 8"
   }

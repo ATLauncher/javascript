@@ -19,9 +19,9 @@
     "react": "^15.5.4"
   },
   "devDependencies": {
-    "@atlauncher/babel-preset-atlauncher": "^0.1.0-3",
-    "@atlauncher/eslint-config-atlauncher": "^0.1.0-5",
-    "@atlauncher/eslint-plugin-atlauncher": "^0.1.0",
+    "@atlauncher/babel-preset-atlauncher": "^0.1.0-9",
+    "@atlauncher/eslint-config-atlauncher": "^0.1.0-10",
+    "@atlauncher/eslint-plugin-atlauncher": "^0.2.0",
     "@kadira/storybook": "^2.35.3",
     "@kadira/storybook-addon-knobs": "^1.7.1",
     "@kadira/storybook-addon-options": "^1.0.2",
@@ -81,7 +81,8 @@
     "url": "https://github.com/ATLauncher/style-guide/issues"
   },
   "homepage": "https://github.com/ATLauncher/style-guide#readme",
+  "engineStrict": true,
   "engines": {
-    "node": ">= 6"
+    "node": ">= 8"
   }
 }

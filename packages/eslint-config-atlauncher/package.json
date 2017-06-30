@@ -26,11 +26,11 @@
   "devDependencies": {
     "@atlauncher/eslint-plugin-atlauncher": "^0.2.0",
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.1.0",
+    "eslint": "^4.1.1",
     "eslint-plugin-eslint-comments": "^1.0.2",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-immutable": "^1.0.0",
-    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-import": "^2.6.1",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-no-loops": "^0.3.0",
@@ -38,19 +38,20 @@
     "eslint-plugin-react": "^7.1.0"
   },
   "peerDependencies": {
-    "@atlauncher/eslint-plugin-atlauncher": "^0.2.0",
-    "babel-eslint": "^7.2.2",
-    "eslint": "^3.19.0",
+    "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.1.1",
     "eslint-plugin-eslint-comments": "^1.0.2",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-immutable": "^1.0.0",
-    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-import": "^2.6.1",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.1.0"
   },
+  "engineStrict": true,
   "engines": {
     "node": ">= 8"
   }
