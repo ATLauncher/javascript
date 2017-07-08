@@ -6,6 +6,9 @@ module.exports = {
         // requires all anchor tags to have content that isn't hidden
         'jsx-a11y/anchor-has-content': 'error',
 
+        // requires all anchor tags to have valid href's
+        'jsx-a11y/anchor-is-valid': 'error',
+
         // disallow using invalid aria attributes
         'jsx-a11y/aria-props': 'error',
 
@@ -21,9 +24,6 @@ module.exports = {
         // ensure all headings have content that isn't hidden
         'jsx-a11y/heading-has-content': 'error',
 
-        // don't allow anchor tags to have a href that is just `#`
-        'jsx-a11y/href-no-hash': 'error',
-
         // ensure html tag has a `lang` property
         'jsx-a11y/html-has-lang': 'error',
 
@@ -35,6 +35,9 @@ module.exports = {
 
         // don't allow the workds `image`, `photo` or `picture` in image `alt` property
         'jsx-a11y/img-redundant-alt': 'error',
+
+        // interactive elements must support focus
+        'jsx-a11y/interactive-supports-focus': 'error',
 
         // require all `label` elements have a `htmlFor` property
         'jsx-a11y/label-has-for': 'error',
