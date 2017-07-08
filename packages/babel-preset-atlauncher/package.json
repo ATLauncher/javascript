@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/babel-preset-atlauncher",
-  "version": "0.1.0-10",
+  "version": "0.1.0-11",
   "description": "ATLauncher's babel preset.",
   "main": "index.js",
   "repository": {
@@ -30,7 +30,7 @@
     "babel-preset-react": "^6.24.1"
   },
   "devDependencies": {
-    "@atlauncher/eslint-config-atlauncher": "^0.1.0-11",
+    "@atlauncher/eslint-config-atlauncher": "^0.1.0-12",
     "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
     "babel-eslint": "^7.2.3",
     "eslint": "^4.1.1",
