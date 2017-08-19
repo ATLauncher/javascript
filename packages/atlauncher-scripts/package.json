@@ -25,6 +25,7 @@
         "@atlauncher/eslint-config-atlauncher": "^0.1.0-12",
         "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
         "babel-eslint": "^7.2.3",
+        "babel-jest": "~20.0.3",
         "eslint": "^4.1.1",
         "eslint-plugin-eslint-comments": "^1.0.2",
         "eslint-plugin-filenames": "^1.2.0",
@@ -34,7 +35,8 @@
         "eslint-plugin-new-with-error": "^1.1.0",
         "eslint-plugin-no-loops": "^0.3.0",
         "eslint-plugin-promise": "^3.5.0",
-        "eslint-plugin-react": "^7.1.0"
+        "eslint-plugin-react": "^7.1.0",
+        "jest": "~20.0.4"
     },
     "engineStrict": true,
     "engines": {
