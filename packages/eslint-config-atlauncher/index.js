@@ -37,7 +37,7 @@ module.exports = {
         node: true,
         es6: true,
         browser: true,
-        mocha: true,
+        jest: true,
     },
     parser: 'babel-eslint',
     parserOptions: {

@@ -1,25 +1,31 @@
 module.exports = {
     rules: {
-        // require braces unless straight returning a simple value
-        'arrow-body-style': ['error', 'as-needed'],
+        // always require braces in arrow functions
+        'arrow-body-style': ['error', 'always'],
 
         // always require the start of an arrow function to be wrapped in parenthesis
         'arrow-parens': ['error', 'always'],
 
         // require spaces before and after the `=>` in an arrow function
-        'arrow-spacing': ['error', {
-            before: true,
-            after: true,
-        }],
+        'arrow-spacing': [
+            'error',
+            {
+                before: true,
+                after: true,
+            },
+        ],
 
         // require calling super when defining a constructor in a sub class
         'constructor-super': 'error',
 
         // require generators to be defined as `function*()`
-        'generator-star-spacing': ['error', {
-            before: false,
-            after: false,
-        }],
+        'generator-star-spacing': [
+            'error',
+            {
+                before: false,
+                after: false,
+            },
+        ],
 
         // don't allow reassigning class definitions
         'no-class-assign': 'error',
