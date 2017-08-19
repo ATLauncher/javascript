@@ -46,7 +46,7 @@ process.on('unhandledRejection', (err) => {
         '--rootDir',
         utils.getProjectBasePath(),
         '--config',
-        utils.getRootFile('.jestrc'),
+        utils.getRootFile('jest.json'),
     ];
 
     if (watch) {
