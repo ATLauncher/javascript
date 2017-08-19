@@ -41,7 +41,7 @@ process.on('unhandledRejection', (err) => {
 
     const processArguments = [];
 
-    const command = [utils.getNodeModulesBinPath('jest')];
+    const command = [utils.getNodeModulesBinPath('jest'), '--config', utils.getRootFile('.jestrc')];
 
     if (watch) {
         command.push('--watch');
