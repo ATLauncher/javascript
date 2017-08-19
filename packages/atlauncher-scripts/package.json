@@ -1,6 +1,6 @@
 {
     "name": "@atlauncher/atlauncher-scripts",
-    "version": "0.1.0-3",
+    "version": "0.1.0-4",
     "description": "Configuration and scripts for use with ATLauncher projects.",
     "repository": {
         "type": "git",
