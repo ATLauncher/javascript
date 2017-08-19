@@ -1,88 +1,89 @@
 {
-  "name": "@atlauncher/ui-components",
-  "version": "0.0.0",
-  "description": "ATLauncher UI components.",
-  "main": "index.js",
-  "scripts": {
-    "build-storybook": "build-storybook -c .storybook -o ",
-    "clean": "rimraf .out",
-    "lint": "eslint components/ test/ styles/",
-    "lint:watch": "esw --watch components/ test/ styles/",
-    "storybook": "cross-env NODE_ENV=development npm run storybook:dev",
-    "storybook:dev": "cross-env NODE_ENV=development start-storybook -p 9001 -c .storybook",
-    "storybook:build": "cross-env NODE_ENV=production build-storybook -c .storybook -o .out",
-    "storybook:publish": "storybook-to-ghpages",
-    "test": "cross-env NODE_ENV=test mocha --opts ./mocha.opts",
-    "test:watch": "cross-env NODE_ENV=test npm run test -- --watch"
-  },
-  "dependencies": {
-    "react": "^15.5.4"
-  },
-  "devDependencies": {
-    "@atlauncher/babel-preset-atlauncher": "^0.1.0-10",
-    "@atlauncher/eslint-config-atlauncher": "^0.1.0-11",
-    "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
-    "@kadira/storybook": "^2.35.3",
-    "@kadira/storybook-addon-knobs": "^1.7.1",
-    "@kadira/storybook-addon-options": "^1.0.2",
-    "@kadira/storybook-deployer": "^1.2.0",
-    "babel-core": "^6.24.1",
-    "babel-eslint": "^7.2.1",
-    "babel-polyfill": "^6.23.0",
-    "babel-register": "^6.24.1",
-    "chai": "^3.5.0",
-    "chai-enzyme": "^0.6.1",
-    "cross-env": "^4.0.0",
-    "css-loader": "^0.28.0",
-    "enzyme": "^2.8.0",
-    "eslint": "^3.19.0",
-    "eslint-plugin-eslint-comments": "^1.0.1",
-    "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-immutable": "^1.0.0",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-new-with-error": "^1.1.0",
-    "eslint-plugin-no-loops": "^0.3.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.0.1",
-    "eslint-watch": "^3.0.1",
-    "ignore-styles": "^5.0.1",
-    "jsdom": "^9.12.0",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.3",
-    "mocha": "^3.2.0",
-    "proptypes": "^1.1.0",
-    "raw-loader": "^0.5.1",
-    "react-addons-test-utils": "^15.5.1",
-    "react-dom": "^15.5.3",
-    "rimraf": "^2.6.1",
-    "simple-jsdom": "^3.0.0",
-    "sinon": "^2.1.0",
-    "sinon-chai": "^2.9.0",
-    "storybook-readme": "^2.0.2",
-    "style-loader": "^0.16.1",
-    "webpack": "^2.3.3"
-  },
-  "peerDependencies": {
-    "react": "^15.5.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ATLauncher/style-guide.git"
-  },
-  "keywords": [
-    "atlauncher",
-    "minecraft",
-    "styleguide"
-  ],
-  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ATLauncher/style-guide/issues"
-  },
-  "homepage": "https://github.com/ATLauncher/style-guide#readme",
-  "engineStrict": true,
-  "engines": {
-    "node": ">= 8"
-  }
+    "name": "@atlauncher/ui-components",
+    "version": "0.0.0",
+    "description": "ATLauncher UI components.",
+    "main": "index.js",
+    "scripts": {
+        "build-storybook": "build-storybook -c .storybook -o ",
+        "clean": "rimraf .out",
+        "lint": "atlauncher-scripts lint",
+        "lint:css": "atlauncher-scripts lint css",
+        "lint:js": "atlauncher-scripts lint js",
+        "lint:watch": "esw --watch components/ test/ styles/",
+        "storybook": "cross-env NODE_ENV=development npm run storybook:dev",
+        "storybook:dev": "cross-env NODE_ENV=development start-storybook -p 9001 -c .storybook",
+        "storybook:build": "cross-env NODE_ENV=production build-storybook -c .storybook -o .out",
+        "storybook:publish": "storybook-to-ghpages",
+        "test": "cross-env NODE_ENV=test mocha --opts ./mocha.opts",
+        "test:watch": "cross-env NODE_ENV=test npm run test -- --watch"
+    },
+    "dependencies": {
+        "react": "^15.6.1"
+    },
+    "devDependencies": {
+        "@atlauncher/babel-preset-atlauncher": "^0.1.0-10",
+        "@atlauncher/atlauncher-scripts": "^0.1.0",
+        "@kadira/storybook": "^2.35.3",
+        "@kadira/storybook-addon-knobs": "^1.7.1",
+        "@kadira/storybook-addon-options": "^1.0.2",
+        "@kadira/storybook-deployer": "^1.2.0",
+        "babel-core": "^6.26.0",
+        "babel-eslint": "^7.2.3",
+        "babel-polyfill": "^6.26.0",
+        "babel-register": "^6.26.0",
+        "chai": "^4.1.1",
+        "chai-enzyme": "^0.8.0",
+        "cross-env": "^5.0.5",
+        "css-loader": "^0.28.5",
+        "enzyme": "^2.9.1",
+        "eslint": "^4.5.0",
+        "eslint-plugin-eslint-comments": "^1.0.3",
+        "eslint-plugin-filenames": "^1.2.0",
+        "eslint-plugin-immutable": "^1.0.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^6.0.2",
+        "eslint-plugin-new-with-error": "^1.1.0",
+        "eslint-plugin-no-loops": "^0.3.0",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-react": "^7.2.1",
+        "eslint-watch": "^3.1.2",
+        "ignore-styles": "^5.0.1",
+        "jsdom": "^11.1.0",
+        "less": "^2.7.2",
+        "less-loader": "^4.0.5",
+        "mocha": "^3.5.0",
+        "proptypes": "^1.1.0",
+        "raw-loader": "^0.5.1",
+        "react-addons-test-utils": "^15.6.0",
+        "react-dom": "^15.6.1",
+        "rimraf": "^2.6.1",
+        "simple-jsdom": "^3.0.0",
+        "sinon": "^3.2.1",
+        "sinon-chai": "^2.13.0",
+        "storybook-readme": "^3.0.6",
+        "style-loader": "^0.18.2",
+        "webpack": "^3.5.5"
+    },
+    "peerDependencies": {
+        "react": "^15.5.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ATLauncher/style-guide.git"
+    },
+    "keywords": [
+        "atlauncher",
+        "minecraft",
+        "styleguide"
+    ],
+    "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ATLauncher/style-guide/issues"
+    },
+    "homepage": "https://github.com/ATLauncher/style-guide#readme",
+    "engineStrict": true,
+    "engines": {
+        "node": ">= 8"
+    }
 }

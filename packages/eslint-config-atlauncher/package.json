@@ -1,58 +1,59 @@
 {
-  "name": "@atlauncher/eslint-config-atlauncher",
-  "version": "0.1.0-12",
-  "description": "ATLauncher's ESLint config.",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint index.js rules/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ATLauncher/style-guide"
-  },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "javascript",
-    "styleguide"
-  ],
-  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ATLauncher/style-guide/issues"
-  },
-  "homepage": "https://github.com/ATLauncher/style-guide",
-  "devDependencies": {
-    "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.1.1",
-    "eslint-plugin-eslint-comments": "^1.0.2",
-    "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-immutable": "^1.0.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-new-with-error": "^1.1.0",
-    "eslint-plugin-no-loops": "^0.3.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.1.0"
-  },
-  "peerDependencies": {
-    "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.1.1",
-    "eslint-plugin-eslint-comments": "^1.0.2",
-    "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-immutable": "^1.0.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-new-with-error": "^1.1.0",
-    "eslint-plugin-no-loops": "^0.3.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.1.0"
-  },
-  "engineStrict": true,
-  "engines": {
-    "node": ">= 8"
-  }
+    "name": "@atlauncher/eslint-config-atlauncher",
+    "version": "0.1.0-12",
+    "description": "ATLauncher's ESLint config.",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint index.js rules/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ATLauncher/style-guide"
+    },
+    "keywords": [
+        "eslint",
+        "eslintconfig",
+        "config",
+        "javascript",
+        "styleguide"
+    ],
+    "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ATLauncher/style-guide/issues"
+    },
+    "homepage": "https://github.com/ATLauncher/style-guide",
+    "devDependencies": {
+        "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
+        "babel-eslint": "^7.2.3",
+        "eslint": "^4.1.1",
+        "eslint-plugin-eslint-comments": "^1.0.2",
+        "eslint-plugin-filenames": "^1.2.0",
+        "eslint-plugin-immutable": "^1.0.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^6.0.2",
+        "eslint-plugin-new-with-error": "^1.1.0",
+        "eslint-plugin-no-loops": "^0.3.0",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-react": "^7.1.0"
+    },
+    "peerDependencies": {
+        "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
+        "babel-eslint": "^7.2.3",
+        "eslint": "^4.1.1",
+        "eslint-plugin-eslint-comments": "^1.0.2",
+        "eslint-plugin-filenames": "^1.2.0",
+        "eslint-plugin-immutable": "^1.0.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^6.0.2",
+        "eslint-plugin-new-with-error": "^1.1.0",
+        "eslint-plugin-no-loops": "^0.3.0",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-react": "^7.1.0"
+    },
+    "engineStrict": true,
+    "engines": {
+        "node": ">= 8",
+        "npm": ">=5"
+    }
 }
