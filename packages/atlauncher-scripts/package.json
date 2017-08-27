@@ -29,6 +29,7 @@
         "babel-eslint": "^7.2.3",
         "babel-jest": "^20.0.3",
         "colors": "^1.1.2",
+        "cross-spawn": "^5.1.0",
         "eslint": "^4.5.0",
         "eslint-plugin-eslint-comments": "^1.0.3",
         "eslint-plugin-filenames": "^1.2.0",
