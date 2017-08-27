@@ -118,7 +118,7 @@ function spawnSyncProcess(processes = [], workingDirectory) {
     processesToRun.forEach((processToRun) => {
         console.log(colors.green(`Running 'node ${processToRun.join(' ')}'\n`));
 
-        const result = spawn('node', processToRun, {
+        const result = spawn.sync('node', processToRun, {
             stdio: 'inherit',
             cwd: workingDirectory,
         });
