@@ -20,7 +20,11 @@ process.on('unhandledRejection', (err) => {
 
     const processArguments = [];
 
-    processArguments.push([utils.getNodeModulesBinPath('babel-node'), utils.getProjectPath(stringArgs)]);
+    processArguments.push([
+        utils.getNodeModulesBinPath('babel-node'),
+        utils.getProjectPath(stringArgs),
+        '--presets=@atlauncher/babel-preset-atlauncher',
+    ]);
 
     if (!processArguments.length) {
         console.error(colors.red('Error processing input. Please check your arguments and try again.'));

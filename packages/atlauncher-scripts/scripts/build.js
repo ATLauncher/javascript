@@ -29,9 +29,10 @@ process.on('unhandledRejection', (err) => {
     processArguments.push([
         utils.getNodeModulesBinPath('babel'),
         utils.getProjectPath('src'),
-        '-D',
+        '--copy-files',
         '--out-dir',
         utils.getProjectPath('dist'),
+        '--presets=@atlauncher/babel-preset-atlauncher',
     ]);
 
     if (!processArguments.length) {
