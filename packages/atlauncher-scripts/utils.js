@@ -8,8 +8,7 @@ function getProjectBasePath() {
 }
 
 function getProjectPackageJson() {
-    const projectBasePath = getProjectBasePath();
-    const packageJsonPath = path.join(projectBasePath, 'package.json');
+    const packageJsonPath = getProjectPath('package.json');
 
     if (!fs.existsSync(packageJsonPath)) {
         return {};
@@ -41,7 +40,11 @@ function getATLauncherScriptsBasePath() {
 }
 
 function getSourceCodePath() {
-    return path.resolve(getProjectBasePath(), 'src');
+    return getProjectPath('src');
+}
+
+function getProjectPath(pathString = '/') {
+    return path.resolve(getProjectBasePath(), pathString);
 }
 
 function getNodeModulesPath(filename) {
@@ -112,7 +115,7 @@ function spawnSyncProcess(processes = [], workingDirectory) {
         processesToRun = [processes];
     }
 
-    processesToRun.forEach(processToRun => {
+    processesToRun.forEach((processToRun) => {
         console.log(colors.green(`Running 'node ${processToRun.join(' ')}'\n`));
 
         const result = spawn('node', processToRun, {
@@ -132,6 +135,7 @@ function spawnSyncProcess(processes = [], workingDirectory) {
 
 module.exports = {
     getRootFile,
+    getProjectPath,
     spawnSyncProcess,
     getSourceCodeGlob,
     getSourceCodePath,

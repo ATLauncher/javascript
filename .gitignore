@@ -1,8 +1,9 @@
 # node modules folder
 node_modules/
 
-# IntelliJ IDE files
+# Editor/IDE files
 .idea/
+.vscode/
 
 # NPM debug log
 npm-debug.log
