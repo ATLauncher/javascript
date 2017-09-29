@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const spawn = require('cross-spawn');
 const colors = require('colors/safe');
+const isWindows = require('is-windows');
 
 function getProjectBasePath() {
     return path.resolve(process.cwd());
@@ -69,6 +70,14 @@ function getNodeModulesPath(filename) {
 }
 
 function getNodeModulesBinPath(packageName) {
+    if (isWindows()) {
+        const cmdBin = getNodeModulesPath(`.bin/${packageName}.cmd`);
+
+        if (fs.existsSync(cmdBin)) {
+            return cmdBin;
+        }
+    }
+
     return getNodeModulesPath(`.bin/${packageName}`);
 }
 
