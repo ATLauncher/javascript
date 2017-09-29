@@ -113,7 +113,7 @@ function getSourceCodeGlob(type = 'js') {
     return `${sourceCodePath}/**/*`;
 }
 
-function spawnSyncProcess(processes = [], workingDirectory) {
+function spawnSyncProcess(command = 'node', processes = [], workingDirectory) {
     if (typeof processes !== 'object') {
         return;
     }
@@ -125,9 +125,9 @@ function spawnSyncProcess(processes = [], workingDirectory) {
     }
 
     processesToRun.forEach((processToRun) => {
-        console.log(colors.green(`Running 'node ${processToRun.join(' ')}'\n`));
+        console.log(colors.green(`Running '${command} ${processToRun.join(' ')}'\n`));
 
-        const result = spawn.sync('node', processToRun, {
+        const result = spawn.sync(command, processToRun, {
             stdio: 'inherit',
             cwd: workingDirectory,
         });

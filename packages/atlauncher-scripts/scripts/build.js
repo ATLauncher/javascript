@@ -27,7 +27,6 @@ process.on('unhandledRejection', (err) => {
     const processArguments = [];
 
     processArguments.push([
-        utils.getNodeModulesBinPath('babel'),
         utils.getProjectPath('src'),
         '--copy-files',
         '--out-dir',
@@ -41,5 +40,5 @@ process.on('unhandledRejection', (err) => {
         return;
     }
 
-    utils.spawnSyncProcess(processArguments, workingDirectory);
+    utils.spawnSyncProcess(utils.getNodeModulesBinPath('babel'), processArguments, workingDirectory);
 })();

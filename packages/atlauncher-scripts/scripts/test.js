@@ -41,13 +41,7 @@ process.on('unhandledRejection', (err) => {
 
     const processArguments = [];
 
-    const command = [
-        utils.getNodeModulesBinPath('jest'),
-        '--rootDir',
-        utils.getProjectBasePath(),
-        '--config',
-        utils.getRootFile('jest.json'),
-    ];
+    const command = ['--rootDir', utils.getProjectBasePath(), '--config', utils.getRootFile('jest.json')];
 
     if (watch) {
         command.push('--watch');
@@ -73,5 +67,5 @@ process.on('unhandledRejection', (err) => {
         return;
     }
 
-    utils.spawnSyncProcess(processArguments);
+    utils.spawnSyncProcess(utils.getNodeModulesBinPath('jest'), processArguments);
 })();

@@ -20,11 +20,7 @@ process.on('unhandledRejection', (err) => {
 
     const processArguments = [];
 
-    processArguments.push([
-        utils.getNodeModulesBinPath('babel-node'),
-        utils.getProjectPath(stringArgs),
-        '--presets=@atlauncher/babel-preset-atlauncher',
-    ]);
+    processArguments.push([utils.getProjectPath(stringArgs), '--presets=@atlauncher/babel-preset-atlauncher']);
 
     if (!processArguments.length) {
         console.error(colors.red('Error processing input. Please check your arguments and try again.'));
@@ -32,5 +28,5 @@ process.on('unhandledRejection', (err) => {
         return;
     }
 
-    utils.spawnSyncProcess(processArguments, workingDirectory);
+    utils.spawnSyncProcess(utils.getNodeModulesBinPath('babel-node'), processArguments, workingDirectory);
 })();

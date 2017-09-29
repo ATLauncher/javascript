@@ -1,14 +1,14 @@
 const utils = require('../utils');
 const colors = require('colors/safe');
 
-// Do this as the first thing so that any code reading it knows the right env.
+// do this as the first thing so that any code reading it knows the right env.
 process.env.BABEL_ENV = 'development';
 process.env.NODE_ENV = 'development';
 
-// Makes the script crash on unhandled rejections instead of silently
+// makes the script crash on unhandled rejections instead of silently
 // ignoring them. In the future, promise rejections that are not handled will
 // terminate the Node.js process with a non-zero exit code.
-process.on('unhandledRejection', err => {
+process.on('unhandledRejection', (err) => {
     throw err;
 });
 
@@ -20,7 +20,7 @@ process.on('unhandledRejection', err => {
     const workingDirectory = utils.getProjectBasePath();
 
     if (args.length) {
-        args.forEach(arg => {
+        args.forEach((arg) => {
             if (arg === 'js') {
                 toLint = 'js';
             }
@@ -56,20 +56,14 @@ process.on('unhandledRejection', err => {
     }
 
     if (watch && toLint === 'js') {
-        processArguments.push([
-            utils.getNodeModulesBinPath('chokidar'),
-            utils.getSourceCodeGlob('js'),
-            '--initial',
-            '-c npm run lint:js',
-        ]);
+        processArguments.push([utils.getSourceCodeGlob('js'), '--initial', '-c npm run lint:js']);
     }
 
     if (!processArguments.length) {
-        console.error(
-            colors.red('Error processing input. Please check your arguments and try again.'),
-        );
+        console.error(colors.red('Error processing input. Please check your arguments and try again.'));
+
         return;
     }
 
-    utils.spawnSyncProcess(processArguments, workingDirectory);
+    utils.spawnSyncProcess(utils.getNodeModulesBinPath('chokidar'), processArguments, workingDirectory);
 })();
