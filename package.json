@@ -17,8 +17,5 @@
     "engines": {
         "node": ">= 8",
         "npm": ">= 5"
-    },
-    "dependencies": {
-        "is-windows": "~1.0.1"
     }
 }
