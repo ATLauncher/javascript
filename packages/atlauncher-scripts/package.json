@@ -1,49 +1,54 @@
 {
-    "name": "@atlauncher/atlauncher-scripts",
-    "version": "0.1.0-15",
-    "description": "Configuration and scripts for use with ATLauncher projects.",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ATLauncher/style-guide"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "keywords": ["javascript", "scripts", "linting", "testing"],
-    "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/ATLauncher/style-guide/issues"
-    },
-    "homepage": "https://github.com/ATLauncher/style-guide",
-    "bin": {
-        "atlauncher-scripts": "./bin/atlauncher-scripts.js"
-    },
-    "dependencies": {
-        "@atlauncher/babel-preset-atlauncher": "0.1.0-11",
-        "@atlauncher/eslint-config-atlauncher": "0.1.0-13",
-        "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
-        "babel-cli": "^6.26.0",
-        "babel-eslint": "^7.2.3",
-        "babel-jest": "^20.0.3",
-        "colors": "^1.1.2",
-        "cross-spawn": "^5.1.0",
-        "eslint": "^4.5.0",
-        "eslint-plugin-eslint-comments": "^1.0.3",
-        "eslint-plugin-filenames": "^1.2.0",
-        "eslint-plugin-immutable": "^1.0.0",
-        "eslint-plugin-import": "^2.7.0",
-        "eslint-plugin-jsx-a11y": "^6.0.2",
-        "eslint-plugin-new-with-error": "^1.1.0",
-        "eslint-plugin-no-loops": "^0.3.0",
-        "eslint-plugin-promise": "^3.5.0",
-        "eslint-plugin-react": "^7.2.1",
-        "is-windows": "^1.0.1",
-        "jest": "^20.0.4"
-    },
-    "engineStrict": true,
-    "engines": {
-        "node": ">= 8",
-        "npm": ">=5"
-    }
+  "name": "@atlauncher/atlauncher-scripts",
+  "version": "0.1.0-15",
+  "description": "Configuration and scripts for use with ATLauncher projects.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ATLauncher/style-guide"
+  },
+  "publishConfig": {
+      "access": "public"
+  },
+  "keywords": [
+    "javascript",
+    "scripts",
+    "linting",
+    "testing"
+  ],
+  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ATLauncher/style-guide/issues"
+  },
+  "homepage": "https://github.com/ATLauncher/style-guide",
+  "bin": {
+    "atlauncher-scripts": "./bin/atlauncher-scripts.js"
+  },
+  "dependencies": {
+    "@atlauncher/babel-preset-atlauncher": "0.1.0-12",
+    "@atlauncher/eslint-config-atlauncher": "0.1.0-14",
+    "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-jest": "^21.2.0",
+    "colors": "^1.1.2",
+    "cross-spawn": "^5.1.0",
+    "eslint": "^4.11.0",
+    "eslint-plugin-eslint-comments": "^2.0.1",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-immutable": "^1.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-new-with-error": "^1.1.0",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "is-windows": "^1.0.1",
+    "jest": "^21.2.1"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 8",
+    "npm": ">=5"
+  }
 }
