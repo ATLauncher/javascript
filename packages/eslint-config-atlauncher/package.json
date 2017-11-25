@@ -10,13 +10,10 @@
         "type": "git",
         "url": "https://github.com/ATLauncher/style-guide"
     },
-    "keywords": [
-        "eslint",
-        "eslintconfig",
-        "config",
-        "javascript",
-        "styleguide"
-    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": ["eslint", "eslintconfig", "config", "javascript", "styleguide"],
     "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
     "license": "MIT",
     "bugs": {

@@ -1,51 +1,52 @@
 {
-  "name": "@atlauncher/babel-preset-atlauncher",
-  "version": "0.1.0-11",
-  "description": "ATLauncher's babel preset.",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ATLauncher/style-guide"
-  },
-  "keywords": [
-    "babel"
-  ],
-  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ATLauncher/style-guide/issues"
-  },
-  "scripts": {
-    "lint": "eslint index.js"
-  },
-  "homepage": "https://github.com/ATLauncher/style-guide",
-  "dependencies": {
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-export-extensions": "^6.22.0",
-    "babel-plugin-transform-function-bind": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.6",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1"
-  },
-  "devDependencies": {
-    "@atlauncher/eslint-config-atlauncher": "^0.1.0-12",
-    "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.1.1",
-    "eslint-plugin-eslint-comments": "^1.0.2",
-    "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-immutable": "^1.0.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-new-with-error": "^1.1.0",
-    "eslint-plugin-no-loops": "^0.3.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.1.0"
-  },
-  "engineStrict": true,
-  "engines": {
-    "node": ">= 8"
-  }
+    "name": "@atlauncher/babel-preset-atlauncher",
+    "version": "0.1.0-11",
+    "description": "ATLauncher's babel preset.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ATLauncher/style-guide"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": ["babel"],
+    "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ATLauncher/style-guide/issues"
+    },
+    "scripts": {
+        "lint": "eslint index.js"
+    },
+    "homepage": "https://github.com/ATLauncher/style-guide",
+    "dependencies": {
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-export-extensions": "^6.22.0",
+        "babel-plugin-transform-function-bind": "^6.22.0",
+        "babel-plugin-transform-object-rest-spread": "^6.23.0",
+        "babel-plugin-transform-react-remove-prop-types": "^0.4.6",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-react": "^6.24.1"
+    },
+    "devDependencies": {
+        "@atlauncher/eslint-config-atlauncher": "^0.1.0-12",
+        "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
+        "babel-eslint": "^7.2.3",
+        "eslint": "^4.1.1",
+        "eslint-plugin-eslint-comments": "^1.0.2",
+        "eslint-plugin-filenames": "^1.2.0",
+        "eslint-plugin-immutable": "^1.0.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^6.0.2",
+        "eslint-plugin-new-with-error": "^1.1.0",
+        "eslint-plugin-no-loops": "^0.3.0",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-react": "^7.1.0"
+    },
+    "engineStrict": true,
+    "engines": {
+        "node": ">= 8"
+    }
 }

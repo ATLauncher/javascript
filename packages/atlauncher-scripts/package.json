@@ -6,12 +6,10 @@
         "type": "git",
         "url": "https://github.com/ATLauncher/style-guide"
     },
-    "keywords": [
-        "javascript",
-        "scripts",
-        "linting",
-        "testing"
-    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": ["javascript", "scripts", "linting", "testing"],
     "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
     "license": "MIT",
     "bugs": {

@@ -1,31 +1,30 @@
 {
-  "name": "@atlauncher/eslint-plugin-atlauncher",
-  "version": "0.2.1",
-  "description": "Custom ESLint rules for use with eslint-config-atlauncher",
-  "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ATLauncher/style-guide"
-  },
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin"
-  ],
-  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ATLauncher/style-guide/issues"
-  },
-  "homepage": "https://github.com/ATLauncher/style-guide",
-  "dependencies": {
-    "requireindex": "^1.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^4.1.1"
-  },
-  "engineStrict": true,
-  "engines": {
-    "node": ">= 8"
-  }
+    "name": "@atlauncher/eslint-plugin-atlauncher",
+    "version": "0.2.1",
+    "description": "Custom ESLint rules for use with eslint-config-atlauncher",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ATLauncher/style-guide"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": ["eslint", "eslintplugin", "eslint-plugin"],
+    "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ATLauncher/style-guide/issues"
+    },
+    "homepage": "https://github.com/ATLauncher/style-guide",
+    "dependencies": {
+        "requireindex": "^1.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^4.1.1"
+    },
+    "engineStrict": true,
+    "engines": {
+        "node": ">= 8"
+    }
 }
