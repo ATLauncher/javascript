@@ -17,6 +17,7 @@ process.on('unhandledRejection', (err) => {
     let toLint = 'all';
     let debug = false;
     let watch = false;
+    let commandBinToRun = 'eslint';
     const workingDirectory = utils.getProjectBasePath();
 
     if (args.length) {
@@ -39,7 +40,6 @@ process.on('unhandledRejection', (err) => {
 
     if (!watch && (toLint === 'js' || toLint === 'all')) {
         const command = [
-            utils.getNodeModulesBinPath('eslint'),
             '--config',
             utils.getRootFile('.eslintrc'),
             '--ignore-path',
@@ -56,6 +56,7 @@ process.on('unhandledRejection', (err) => {
     }
 
     if (watch && toLint === 'js') {
+        commandBinToRun = 'chokidar';
         processArguments.push([utils.getSourceCodeGlob('js'), '--initial', '-c npm run lint:js']);
     }
 
@@ -65,5 +66,5 @@ process.on('unhandledRejection', (err) => {
         return;
     }
 
-    utils.spawnSyncProcess(utils.getNodeModulesBinPath('chokidar'), processArguments, workingDirectory);
+    utils.spawnSyncProcess(utils.getNodeModulesBinPath(commandBinToRun), processArguments, workingDirectory);
 })();

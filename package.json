@@ -9,9 +9,9 @@
     "npm:prune": "lerna exec -- npm prune",
     "postinstall": "lerna bootstrap",
     "prepush": "npm run lint && npm run test",
-    "publish": "lerna publish --conventional-commits --exact -m 'chore: publish %s'",
+    "publish": "lerna publish --conventional-commits --exact -m 'chore: publish'",
     "publish:alpha": "lerna publish -m 'chore: publish release' --conventional-commits",
-    "publish:beta": "lerna publish --conventional-commits --exact --npm-tag=next --cd-version=prerelease --pre-id=beta -m 'chore: publish %s'",
+    "publish:beta": "lerna publish --conventional-commits --exact --npm-tag=next --cd-version=prerelease --pre-id=beta -m 'chore: publish'",
     "storybook:dev": "lerna run --scope @atlauncher/ui-components storybook:dev --stream",
     "storybook:publish": "lerna run --scope @atlauncher/ui-components storybook:publish --stream",
     "test": "lerna run test"
