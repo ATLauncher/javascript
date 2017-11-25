@@ -1,13 +1,13 @@
 {
   "name": "@atlauncher/atlauncher-scripts",
-  "version": "0.1.0-15",
+  "version": "0.1.0-16",
   "description": "Configuration and scripts for use with ATLauncher projects.",
   "repository": {
     "type": "git",
     "url": "https://github.com/ATLauncher/style-guide"
   },
   "publishConfig": {
-      "access": "public"
+    "access": "public"
   },
   "keywords": [
     "javascript",
