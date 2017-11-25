@@ -1,6 +1,6 @@
 {
     "name": "@atlauncher/commitlint-config-atlauncher",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "commitlint rules for use by ATLauncher projects",
     "main": "index.js",
     "repository": {
@@ -10,7 +10,13 @@
     "publishConfig": {
         "access": "public"
     },
-    "keywords": ["commitlint", "commitlint-config", "config", "javascript", "styleguide"],
+    "keywords": [
+        "commitlint",
+        "commitlint-config",
+        "config",
+        "javascript",
+        "styleguide"
+    ],
     "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
     "license": "MIT",
     "bugs": {
