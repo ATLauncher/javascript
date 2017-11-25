@@ -76,8 +76,20 @@ To run tests on all the packages, simply run `npm run test`.
 npm run publish
 ```
 
+Or for a single package:
+
+```bash
+npm run publish -- --scope @atlauncher/package-name
+```
+
 ### Beta versions
 
 ```bash
 npm run publish:beta
+```
+
+Or for a single package:
+
+```bash
+npm run publish:beta -- --scope @atlauncher/package-name
 ```
