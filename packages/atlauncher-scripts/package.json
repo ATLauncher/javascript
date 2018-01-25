@@ -2,6 +2,10 @@
   "name": "@atlauncher/atlauncher-scripts",
   "version": "0.1.0-17",
   "description": "Configuration and scripts for use with ATLauncher projects.",
+  "scripts": {
+    "lint": "npm run lint:md",
+    "lint:md": "markdownlint -c ./config/.markdownlint.json *.md"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ATLauncher/style-guide"

@@ -1,2 +1,9 @@
+# IDE/editor specific directories
+.vscode/
+.idea/
+
+# ignore node_modules directory
+node_modules/
+
+# Ignore the npm debug log files
 npm-debug.log*
-node_modules
