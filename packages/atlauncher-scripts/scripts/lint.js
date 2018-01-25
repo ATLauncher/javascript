@@ -14,7 +14,7 @@ process.on('unhandledRejection', (err) => {
 
 (() => {
     const args = process.argv.slice(2);
-    let toLint = 'all';
+    let toLint = 'js';
     let debug = false;
     let watch = false;
     let commandBinToRun = 'eslint';
@@ -24,6 +24,8 @@ process.on('unhandledRejection', (err) => {
         args.forEach((arg) => {
             if (arg === 'js') {
                 toLint = 'js';
+            } else if (arg === 'md') {
+                toLint = 'md';
             }
 
             if (arg === '--watch') {
@@ -38,26 +40,39 @@ process.on('unhandledRejection', (err) => {
 
     const processArguments = [];
 
-    if (!watch && (toLint === 'js' || toLint === 'all')) {
-        const command = [
-            '--config',
-            utils.getRootFile('.eslintrc'),
-            '--ignore-path',
-            utils.getRootFile('.eslintignore'),
-        ];
+    if (toLint === 'js') {
+        if (watch) {
+            commandBinToRun = 'chokidar';
+            processArguments.push([utils.getSourceCodeGlob('js'), '--initial', '-c npm run lint:js']);
+        } else {
+            const command = [
+                '--config',
+                utils.getRootFile('.eslintrc'),
+                '--ignore-path',
+                utils.getRootFile('.eslintignore'),
+            ];
 
-        if (debug) {
-            command.push('--debug');
+            if (debug) {
+                command.push('--debug');
+            }
+
+            command.push(utils.getSourceCodeGlob('js'));
+
+            processArguments.push(command);
         }
-
-        command.push(utils.getSourceCodeGlob('js'));
-
-        processArguments.push(command);
     }
 
-    if (watch && toLint === 'js') {
-        commandBinToRun = 'chokidar';
-        processArguments.push([utils.getSourceCodeGlob('js'), '--initial', '-c npm run lint:js']);
+    if (toLint === 'md') {
+        commandBinToRun = 'markdownlint';
+
+        const command = [
+            '--config',
+            utils.getRootFile('.markdownlint.json'),
+        ];
+
+        command.push(utils.getRootGlob('md'));
+
+        processArguments.push(command);
     }
 
     if (!processArguments.length) {

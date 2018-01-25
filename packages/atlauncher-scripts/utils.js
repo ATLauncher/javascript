@@ -97,6 +97,20 @@ function getRootFile(filename) {
     return defaultRootFile;
 }
 
+function getRootGlob(type = 'js') {
+    let sourceCodePath = getProjectBasePath();
+
+    if (sourceCodePath.substr(-1) === '/') {
+        sourceCodePath = sourceCodePath.substr(0, sourceCodePath.length - 1);
+    }
+
+    if (type === 'css') {
+        return `${sourceCodePath}/*.{css,less,scss}`;
+    }
+
+    return `${sourceCodePath}/*.${type}`;
+}
+
 function getSourceCodeGlob(type = 'js') {
     let sourceCodePath = getSourceCodePath();
 
