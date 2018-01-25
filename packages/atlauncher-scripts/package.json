@@ -29,27 +29,27 @@
     "@atlauncher/eslint-config-atlauncher": "0.1.0-14",
     "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
     "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.0.2",
-    "babel-jest": "^21.2.0",
-    "chokidar": "^1.7.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "chokidar": "^2.0.0",
     "colors": "^1.1.2",
-    "cross-spawn": "^5.1.0",
-    "eslint": "^4.11.0",
-    "eslint-plugin-eslint-comments": "^2.0.1",
+    "cross-spawn": "^6.0.3",
+    "eslint": "^4.16.0",
+    "eslint-plugin-eslint-comments": "^2.0.2",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-immutable": "^1.0.0",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-new-with-error": "^1.1.0",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.5.1",
     "is-windows": "^1.0.1",
-    "jest": "^21.2.1"
+    "jest": "^22.1.4"
   },
   "engineStrict": true,
   "engines": {
-    "node": ">= 8",
+    "node": ">=8",
     "npm": ">=5"
   }
 }
