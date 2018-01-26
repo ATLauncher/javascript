@@ -39,26 +39,17 @@ defaults in this repository.
 
 Below is a list of commands that you can run and their arguments/switches.
 
-### lint
+### babel-run
 
-`atlauncher-scripts lint [type] [--watch] [--debug]`
+`atlauncher-scripts babel-run [arguments]`
 
-Takes in one argument which is the type of files to lint. Should be either `js`, `md` or
-`pj` (package.json). CSS linting is coming in the future.
+This will run the given arguments with `babel-run`.
 
-You can provide a `--watch` switch to allow watching of files.
+### build
 
-You can also provide a `--debug` switch to allow turning on debug mode for ESLint.
+`atlauncher-scripts build`
 
-### test
-
-`atlauncher-scripts test [--watch] [--debug]`
-
-You can provide a `--watch` switch to allow watching of your tests.
-
-You can also provide a `--debug` switch to allow turning on debug mode.
-
-You can also provide a `--coverage` switch to do coverage reporting.
+This will build the files in the `src/` directory with babel and put the compiled files into the `dist/` directory.
 
 ### clean
 
@@ -79,3 +70,46 @@ You can optionally provide an array of extra folders/files to clean in your `pac
     }
 }
 ```
+
+### commitmsg
+
+`atlauncher-scripts commitmsg`
+
+This is intended to be used with `husky` to provide a git hook on commit.
+
+It currently checks the commit message to make sure it's valid and follows
+[our guidelines](https://github.com/ATLauncher/style-guide/blob/master/commitlint-config-atlauncher/README.md).
+
+### lint:js
+
+`atlauncher-scripts lint:js [--watch] [--debug]`
+
+Lints all JS files in the `src/` directory.
+
+You can provide a `--watch` switch to allow watching of files.
+
+You can also provide a `--debug` switch to allow turning on debug mode.
+
+### lint:md
+
+`atlauncher-scripts lint:md`
+
+Lints all MD files.
+
+### lint:pj
+
+`atlauncher-scripts lint:pj`
+
+Lints the `package.json` file.
+
+### test
+
+`atlauncher-scripts test [--watch] [--debug] [--coverage]`
+
+You can provide a `--watch` switch to allow watching of your tests.
+
+You can also provide a `--debug` switch to allow turning on debug mode.
+
+You can also provide a `--coverage` switch to do coverage reporting.
+
+You can also provide a `--noConcurrency` switch to not run tests in parallel (useful for CI).
