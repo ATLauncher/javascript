@@ -18,7 +18,7 @@ if (args.length) {
     });
 }
 
-const projectBasePath = utils.getProjectBasePath();
+const projectBasePath = utils.getProjectPath();
 
 const extraToClean = utils.getConfigFromPackageJson('extraToClean', []);
 

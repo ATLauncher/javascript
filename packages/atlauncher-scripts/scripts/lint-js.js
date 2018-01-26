@@ -30,9 +30,9 @@ if (watch) {
 
 const processArguments = [
     '--config',
-    utils.getRootFile('.eslintrc'),
+    utils.getConfigFile('.eslintrc'),
     '--ignore-path',
-    utils.getRootFile('.eslintignore'),
+    utils.getConfigFile('.eslintignore'),
     debug && '--debug',
     utils.getSourceCodeGlob('js'),
 ];

@@ -2,7 +2,7 @@ const utils = require('../utils');
 
 const processArguments = [
     '--config',
-    utils.getRootFile('.markdownlint.json'),
+    utils.getConfigFile('.markdownlint.json'),
     utils.getRootGlob('md'),
 ];
 

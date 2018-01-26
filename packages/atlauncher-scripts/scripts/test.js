@@ -31,9 +31,9 @@ if (args.length) {
 
 const processArguments = [
     '--rootDir',
-    utils.getProjectBasePath(),
+    utils.getProjectPath(),
     '--config',
-    utils.getRootFile('jest.json'),
+    utils.getConfigFile('jest.json'),
     watch && '--watch',
     debug && '--debug',
     coverage && '--coverage',
