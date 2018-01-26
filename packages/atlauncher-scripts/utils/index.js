@@ -2,13 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
 const spawn = require('cross-spawn');
-const colors = require('colors/safe');
 const isWindows = require('is-windows');
 
 function getScripts() {
     const scripts = fs.readdirSync(getATLauncherScriptsBasePath('scripts'));
 
-    return scripts.map((script) => script.replace('.js', ''));
+    // remove the file extension and turn all '-' to ':' so 'lint-js' is run by using 'lint:js'
+    return scripts.map((script) => script.replace('.js', '').replace('-', ':'));
 }
 
 function getProjectBasePath() {
@@ -146,7 +146,9 @@ function spawnSyncProcess(command = 'node', processes = [], workingDirectory = g
     }
 
     processesToRun.forEach((processToRun) => {
-        console.log(colors.green(`Running '${command} ${processToRun.join(' ')}'\n`));
+        const commandArguments = processToRun.filter((p) => p);
+
+        console.log(chalk`{black.bgWhite Running '${command} ${commandArguments.join(' ')}'}\n`);
 
         const result = spawn.sync(command, processToRun, {
             stdio: 'inherit',

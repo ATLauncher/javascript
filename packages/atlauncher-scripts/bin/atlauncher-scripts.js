@@ -11,6 +11,9 @@ const chalk = require('chalk');
 const utils = require('../utils');
 const spawn = require('cross-spawn');
 
+// do this as the first thing so that any code reading it knows the right env
+process.env.NODE_ENV = 'development';
+
 const args = process.argv.slice(2);
 
 if (!args.length) {
