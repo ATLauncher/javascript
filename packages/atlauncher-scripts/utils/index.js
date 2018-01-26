@@ -43,7 +43,7 @@ function getConfigFromPackageJson(name, defaultValue = null) {
     return packageJson.config.atlauncher[name];
 }
 
-function getATLauncherScriptsBasePath(pathString = '/') {
+function getATLauncherScriptsBasePath(pathString = '') {
     return path.resolve(__dirname, '../', pathString);
 }
 

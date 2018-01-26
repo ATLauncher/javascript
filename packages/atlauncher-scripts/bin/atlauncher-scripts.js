@@ -31,7 +31,7 @@ if (scripts.includes(script)) {
     const result = spawn.sync(
         'node',
         nodeArgs
-            .concat(require.resolve(`../scripts/${script}`))
+            .concat(require.resolve(`../scripts/${script.replace(':', '-')}`))
             .concat(args.slice(scriptIndex + 1)),
         { stdio: 'inherit' }
     );
