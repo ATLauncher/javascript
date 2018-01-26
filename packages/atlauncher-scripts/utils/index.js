@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const chalk = require('chalk');
 const spawn = require('cross-spawn');
 const colors = require('colors/safe');
 const isWindows = require('is-windows');
@@ -133,7 +134,7 @@ function getSourceCodeGlob(type = 'js') {
     return `${sourceCodePath}/**/*`;
 }
 
-function spawnSyncProcess(command = 'node', processes = [], workingDirectory) {
+function spawnSyncProcess(command = 'node', processes = [], workingDirectory = getProjectBasePath()) {
     if (typeof processes !== 'object') {
         return;
     }
@@ -153,12 +154,28 @@ function spawnSyncProcess(command = 'node', processes = [], workingDirectory) {
         });
 
         if (result.signal) {
+            if (result.signal === 'SIGKILL') {
+                console.log(
+                    chalk.white.bgRed(
+                        'Commit Linting failed because the process exited too early. ' +
+                        'This probably means the system ran out of memory or someone called ' +
+                        '`kill -9` on the process.'
+                    )
+                );
+            } else if (result.signal === 'SIGTERM') {
+                console.log(
+                    chalk.white.bgRed(
+                        'Commit Linting failed because the process exited too early. ' +
+                        'Someone might have called `kill` or `killall`, or the system could ' +
+                        'be shutting down.'
+                    )
+                );
+            }
+
             process.exit(1);
         }
 
-        if (result.status !== 0) {
-            process.exit(result.status);
-        }
+        process.exit(result.status);
     });
 }
 

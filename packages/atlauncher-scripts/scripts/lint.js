@@ -18,7 +18,6 @@ process.on('unhandledRejection', (err) => {
     let debug = false;
     let watch = false;
     let commandBinToRun = 'eslint';
-    const workingDirectory = utils.getProjectBasePath();
 
     if (args.length) {
         args.forEach((arg) => {
@@ -95,5 +94,5 @@ process.on('unhandledRejection', (err) => {
 
     processArguments.push(command);
 
-    utils.spawnSyncProcess(utils.getNodeModulesBinPath(commandBinToRun), processArguments, workingDirectory);
+    utils.spawnSyncProcess(utils.getNodeModulesBinPath(commandBinToRun), processArguments);
 })();
