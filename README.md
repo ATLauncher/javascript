@@ -11,7 +11,6 @@ This repository is a mono repo powered with Lerna and contains the following pac
   * @atlauncher/commitlint-config-atlauncher
   * @atlauncher/eslint-config-atlauncher
   * @atlauncher/eslint-plugin-atlauncher
-  * @atlauncher/ui-components
 
 ## Packages
 
@@ -70,18 +69,6 @@ Currently only used to allow ignoring method names from requiring `@returns` JSD
 * [More Info](https://github.com/ATLauncher/style-guide/blob/master/eslint-plugin-atlauncher/README.md)
 * [NPM](https://www.npmjs.com/package/@atlauncher/eslint-plugin-atlauncher)
 
-### @atlauncher/ui-components
-
-This package contains all the components used by ATLauncher in it's various projects to provide a
-consistent visual look through all sites and applications.
-
-It also contains configs to build a React Storybook instance to be able to visually identify and
-play with components.
-
-* [More Info](https://github.com/ATLauncher/style-guide/blob/master/ui-components/README.md)
-* [NPM](https://www.npmjs.com/package/@atlauncher/ui-components)
-* [Storybook](https://atlauncher.github.io/style-guide/)
-
 ## Developing
 
 To get developing with any of these modules, first install Lerna globally:
@@ -92,13 +79,6 @@ npm install --global lerna
 
 Then go ahead and run a `npm install` in this directory. This will bootstrap all the packages which
 will run a npm install and link and cross dependencies.
-
-Then to get up and developing with the modules, simply run `npm run storybook:dev` which will start
-a server at `http://127.0.0.1:9001` with the storybook for the `ui-components` package.
-
-To run the linter simply run `npm run lint` which will run the linter on all the packages.
-
-To run tests on all the packages, simply run `npm run test`.
 
 ## Publishing
 
