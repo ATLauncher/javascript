@@ -153,36 +153,13 @@ function getConfigFile(filename) {
     return null;
 }
 
-function getRootGlob(type = 'js') {
-    let sourceCodePath = getProjectPath();
-
-    if (sourceCodePath.substr(-1) === '/') {
-        sourceCodePath = sourceCodePath.substr(0, sourceCodePath.length - 1);
-    }
-
-    if (type === 'css') {
-        return `${sourceCodePath}/*.{css,less,scss}`;
-    }
-
-    return `${sourceCodePath}/*.${type}`;
-}
-
-function getSourceCodeGlob(type = 'js') {
-    let sourceCodePath = getProjectPath('src');
-
-    if (sourceCodePath.substr(-1) === '/') {
-        sourceCodePath = sourceCodePath.substr(0, sourceCodePath.length - 1);
-    }
-
-    if (type === 'js') {
-        return `${sourceCodePath}/**/*.js`;
-    } else if (type === 'css') {
-        return `${sourceCodePath}/**/*.{css,less,scss}`;
-    }
-
-    return `${sourceCodePath}/**/*`;
-}
-
+/**
+ * This will spawn a syncronous process.
+ *
+ * @param {string} [command='node']
+ * @param {string[]} [processes=[]]
+ * @param {string} [workingDirectory=getProjectPath()]
+ */
 function spawnSyncProcess(command = 'node', processes = [], workingDirectory = getProjectPath()) {
     if (typeof processes !== 'object') {
         return;
@@ -233,11 +210,9 @@ function spawnSyncProcess(command = 'node', processes = [], workingDirectory = g
 // eslint-disable-next-line immutable/no-mutation
 module.exports = {
     getScripts,
-    getRootGlob,
     getConfigFile,
     getProjectPath,
     spawnSyncProcess,
-    getSourceCodeGlob,
     getNodeModulesPath,
     getNodeModulesBinPath,
     getConfigFromPackageJson,

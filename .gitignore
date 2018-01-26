@@ -8,8 +8,7 @@ node_modules/
 # NPM debug log
 npm-debug.log
 
-# lerna debug log
+# lerna files
 lerna-debug.log
-
-# changelog directory
+package.json.lerna_backup
 .changelog

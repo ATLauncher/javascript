@@ -3,9 +3,6 @@
     "version": "0.1.0-14",
     "description": "ATLauncher's ESLint config.",
     "main": "index.js",
-    "scripts": {
-        "lint": "eslint index.js rules/"
-    },
     "repository": {
         "type": "git",
         "url": "https://github.com/ATLauncher/style-guide"

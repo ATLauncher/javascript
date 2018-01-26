@@ -18,7 +18,7 @@ if (args.length) {
 
 if (watch) {
     const processArguments = [
-        utils.getSourceCodeGlob('js'),
+        utils.getProjectPath('src/**/*.js'),
         '--initial',
         '-c npm run lint:js',
     ];
@@ -34,7 +34,7 @@ const processArguments = [
     '--ignore-path',
     utils.getConfigFile('.eslintignore'),
     debug && '--debug',
-    utils.getSourceCodeGlob('js'),
+    utils.getProjectPath('src/**/*.js'),
 ];
 
 utils.spawnSyncProcess(utils.getNodeModulesBinPath('eslint'), processArguments);

@@ -21,7 +21,7 @@ const rules = [
 
 module.exports = {
     plugins: [
-        '@atlauncher/atlauncher',
+        '@atlauncher/eslint-plugin-atlauncher',
         'eslint-comments',
         'filenames',
         'immutable',

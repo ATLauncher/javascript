@@ -1,7 +1,9 @@
 # @atlauncher/eslint-config-atlauncher
+
 Set of ESlint configs to be used for all JavaScript based projects at ATLauncher.
 
 ## Installation
+
 To install this simply run the following:
 
 ```bash
