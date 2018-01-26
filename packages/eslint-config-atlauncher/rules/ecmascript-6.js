@@ -1,7 +1,7 @@
 module.exports = {
     rules: {
-        // always require braces in arrow functions
-        'arrow-body-style': ['error', 'always'],
+        // require braces in arrow functions only when more than one line
+        'arrow-body-style': ['error', 'as-needed'],
 
         // always require the start of an arrow function to be wrapped in parenthesis
         'arrow-parens': ['error', 'always'],
