@@ -1,8 +1,0 @@
-# node modules folder
-node_modules/
-
-# IntelliJ IDE files
-.idea/
-
-# NPM debug log
-npm-debug.log

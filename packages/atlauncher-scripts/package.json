@@ -24,7 +24,7 @@
   "scripts": {
     "commitmsg": "commitlint -x @atlauncher/commitlint-config-atlauncher -e ./.git/COMMIT_EDITMSG",
     "lint": "run-s lint:js lint:md lint:pj",
-    "lint:js": "eslint --config ./config/.eslintrc --ignore-path ./config/.eslintignore ./**/*.js",
+    "lint:js": "eslint --config ./.eslintrc --ignore-path ./config/.eslintignore ./**/*.js",
     "lint:md": "markdownlint -c ./config/.markdownlint.json *.md",
     "lint:pj": "pjl-cli --rules-file ./config/.npmpackagejsonlintrc --file ./package.json",
     "prepush": "npm run lint "
