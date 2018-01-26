@@ -4,6 +4,12 @@ const spawn = require('cross-spawn');
 const colors = require('colors/safe');
 const isWindows = require('is-windows');
 
+function getScripts() {
+    const scripts = fs.readdirSync(getATLauncherScriptsBasePath('scripts'));
+
+    return scripts.map((script) => script.replace('.js', ''));
+}
+
 function getProjectBasePath() {
     return path.resolve(process.cwd());
 }
@@ -36,8 +42,8 @@ function getConfigFromPackageJson(name, defaultValue = null) {
     return packageJson.config.atlauncher[name];
 }
 
-function getATLauncherScriptsBasePath() {
-    return path.resolve(__dirname);
+function getATLauncherScriptsBasePath(pathString = '/') {
+    return path.resolve(__dirname, '../', pathString);
 }
 
 function getSourceCodePath() {
@@ -157,6 +163,7 @@ function spawnSyncProcess(command = 'node', processes = [], workingDirectory) {
 }
 
 module.exports = {
+    getScripts,
     getRootFile,
     getProjectPath,
     spawnSyncProcess,
