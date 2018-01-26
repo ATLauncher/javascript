@@ -26,6 +26,8 @@ process.on('unhandledRejection', (err) => {
                 toLint = 'js';
             } else if (arg === 'md') {
                 toLint = 'md';
+            } else if (arg === 'pj') {
+                toLint = 'pj';
             }
 
             if (arg === '--watch') {
@@ -39,13 +41,18 @@ process.on('unhandledRejection', (err) => {
     }
 
     const processArguments = [];
+    let command = [];
 
     if (toLint === 'js') {
         if (watch) {
             commandBinToRun = 'chokidar';
-            processArguments.push([utils.getSourceCodeGlob('js'), '--initial', '-c npm run lint:js']);
+            command = [
+                utils.getSourceCodeGlob('js'),
+                '--initial',
+                '-c npm run lint:js',
+            ];
         } else {
-            const command = [
+            command = [
                 '--config',
                 utils.getRootFile('.eslintrc'),
                 '--ignore-path',
@@ -57,29 +64,36 @@ process.on('unhandledRejection', (err) => {
             }
 
             command.push(utils.getSourceCodeGlob('js'));
-
-            processArguments.push(command);
         }
     }
 
     if (toLint === 'md') {
         commandBinToRun = 'markdownlint';
 
-        const command = [
+        command = [
             '--config',
             utils.getRootFile('.markdownlint.json'),
+            utils.getRootGlob('md'),
         ];
-
-        command.push(utils.getRootGlob('md'));
-
-        processArguments.push(command);
     }
 
-    if (!processArguments.length) {
+    if (toLint === 'pj') {
+        commandBinToRun = 'pjl-cli';
+
+        command = [
+            '--rules-file',
+            utils.getRootFile('.npmpackagejsonlintrc'),
+            utils.getRootFile('package.json'),
+        ];
+    }
+
+    if (!command.length) {
         console.error(colors.red('Error processing input. Please check your arguments and try again.'));
 
         return;
     }
+
+    processArguments.push(command);
 
     utils.spawnSyncProcess(utils.getNodeModulesBinPath(commandBinToRun), processArguments, workingDirectory);
 })();

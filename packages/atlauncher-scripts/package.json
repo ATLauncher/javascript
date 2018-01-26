@@ -2,35 +2,33 @@
   "name": "@atlauncher/atlauncher-scripts",
   "version": "0.1.0-17",
   "description": "Configuration and scripts for use with ATLauncher projects.",
-  "scripts": {
-    "lint": "npm run lint:md",
-    "lint:md": "markdownlint -c ./config/.markdownlint.json *.md"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ATLauncher/style-guide"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "javascript",
     "scripts",
     "linting",
     "testing"
   ],
-  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
-  "license": "MIT",
+  "homepage": "https://github.com/ATLauncher/style-guide",
   "bugs": {
     "url": "https://github.com/ATLauncher/style-guide/issues"
   },
-  "homepage": "https://github.com/ATLauncher/style-guide",
+  "license": "MIT",
+  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
   "bin": {
     "atlauncher-scripts": "./bin/atlauncher-scripts.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ATLauncher/style-guide"
+  },
+  "scripts": {
+    "lint": "npm run lint:md && npm run lint:pj",
+    "lint:md": "markdownlint -c ./config/.markdownlint.json *.md",
+    "lint:pj": "pjl-cli --rules-file ./config/.npmpackagejsonlintrc --file ./package.json"
+  },
   "dependencies": {
-    "@atlauncher/babel-preset-atlauncher": "0.1.0-12",
-    "@atlauncher/eslint-config-atlauncher": "0.1.0-14",
+    "@atlauncher/babel-preset-atlauncher": "^0.1.0-12",
+    "@atlauncher/eslint-config-atlauncher": "^0.1.0-14",
     "@atlauncher/eslint-plugin-atlauncher": "^0.2.1",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
@@ -51,11 +49,15 @@
     "is-windows": "^1.0.1",
     "jest": "^22.1.4",
     "markdownlint": "^0.7.0",
-    "markdownlint-cli": "^0.6.0"
+    "markdownlint-cli": "^0.6.0",
+    "npm-package-json-lint": "^2.11.1"
   },
-  "engineStrict": true,
   "engines": {
     "node": ">=8",
     "npm": ">=5"
+  },
+  "engineStrict": true,
+  "publishConfig": {
+    "access": "public"
   }
 }

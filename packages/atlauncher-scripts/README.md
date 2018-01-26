@@ -43,8 +43,8 @@ Below is a list of commands that you can run and their arguments/switches.
 
 `atlauncher-scripts lint [type] [--watch] [--debug]`
 
-Takes in one argument which is the type of files to lint. Should be either `js` or `md`. CSS linting
-coming in the future.
+Takes in one argument which is the type of files to lint. Should be either `js`, `md` or
+`pj` (package.json). CSS linting is coming in the future.
 
 You can provide a `--watch` switch to allow watching of files.
 
