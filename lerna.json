@@ -1,16 +1,28 @@
 {
-    "lerna": "2.8.0",
-    "packages": [
-        "packages/atlauncher-scripts",
-        "packages/babel-preset-atlauncher",
-        "packages/commitlint-config-atlauncher",
-        "packages/eslint-config-atlauncher",
-        "packages/eslint-plugin-atlauncher"
-    ],
-    "commands": {
-        "publish": {
-            "ignore": ["*.md", ".nvmrc", ".eslintrc", ".gitignore", ".npmignore", "mocha.opts"]
-        }
-    },
-    "version": "independent"
+  "lerna": "2.8.0",
+  "packages": [
+    "packages/atlauncher-scripts",
+    "packages/babel-preset-atlauncher",
+    "packages/commitlint-config-atlauncher",
+    "packages/eslint-config-atlauncher",
+    "packages/eslint-plugin-atlauncher"
+  ],
+  "commands": {
+    "publish": {
+      "ignore": [
+        "*.md",
+        ".github/*",
+        ".nvmrc",
+        ".editorconfig",
+        ".eslintrc",
+        ".gitignore",
+        ".npmignore",
+        ".nvmrc",
+        "LICENSE",
+        "mocha.opts",
+        "package-lock.json"
+      ]
+    }
+  },
+  "version": "independent"
 }
