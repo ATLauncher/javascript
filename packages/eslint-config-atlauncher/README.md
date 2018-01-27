@@ -15,6 +15,6 @@ And then create (or replace) a `.eslintrc` file in the root directory of your pr
 
 ```json
 {
-    "extends": ["@atlauncher/eslint-config-atlauncher"]
+  "extends": ["@atlauncher/eslint-config-atlauncher"]
 }
 ```

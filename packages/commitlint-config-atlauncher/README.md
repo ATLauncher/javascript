@@ -20,6 +20,7 @@ module.exports = {
 ```
 
 ## Overview of rules
+
 We follow [conventional commits](https://conventionalcommits.org/) and the following is an overview of the rules we have
 enabled for commitlint:
 

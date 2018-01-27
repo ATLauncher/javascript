@@ -6,11 +6,11 @@ This is the style guide for ATLauncher.
 
 This repository is a mono repo powered with Lerna and contains the following packages:
 
-  * @atlauncher/atlauncher-scripts
-  * @atlauncher/babel-preset-atlauncher
-  * @atlauncher/commitlint-config-atlauncher
-  * @atlauncher/eslint-config-atlauncher
-  * @atlauncher/eslint-plugin-atlauncher
+* @atlauncher/atlauncher-scripts
+* @atlauncher/babel-preset-atlauncher
+* @atlauncher/commitlint-config-atlauncher
+* @atlauncher/eslint-config-atlauncher
+* @atlauncher/eslint-plugin-atlauncher
 
 ## Packages
 

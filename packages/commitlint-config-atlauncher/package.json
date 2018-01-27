@@ -1,31 +1,31 @@
 {
-    "name": "@atlauncher/commitlint-config-atlauncher",
-    "version": "0.1.0",
-    "description": "commitlint rules for use by ATLauncher projects",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ATLauncher/style-guide"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "keywords": [
-        "commitlint",
-        "commitlint-config",
-        "config",
-        "javascript",
-        "styleguide"
-    ],
-    "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/ATLauncher/style-guide/issues"
-    },
-    "homepage": "https://github.com/ATLauncher/style-guide",
-    "engineStrict": true,
-    "engines": {
-        "node": ">=8",
-        "npm": ">=5"
-    }
+  "name": "@atlauncher/commitlint-config-atlauncher",
+  "version": "0.1.0",
+  "description": "commitlint rules for use by ATLauncher projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ATLauncher/style-guide"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "commitlint",
+    "commitlint-config",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ATLauncher/style-guide/issues"
+  },
+  "homepage": "https://github.com/ATLauncher/style-guide",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  }
 }

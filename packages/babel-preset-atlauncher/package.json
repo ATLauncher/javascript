@@ -1,37 +1,37 @@
 {
-    "name": "@atlauncher/babel-preset-atlauncher",
-    "version": "0.1.0-12",
-    "description": "ATLauncher's babel preset.",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ATLauncher/style-guide"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "keywords": [
-        "babel"
-    ],
-    "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/ATLauncher/style-guide/issues"
-    },
-    "homepage": "https://github.com/ATLauncher/style-guide",
-    "dependencies": {
-        "babel-plugin-transform-class-properties": "~6.24.1",
-        "babel-plugin-transform-dynamic-import": "~2.0.0",
-        "babel-plugin-transform-object-rest-spread": "~6.26.0",
-        "babel-plugin-transform-react-jsx": "~6.24.1",
-        "babel-plugin-transform-react-remove-prop-types": "~0.4.12",
-        "babel-plugin-transform-regenerator": "~6.26.0",
-        "babel-plugin-transform-runtime": "~6.23.0",
-        "babel-preset-env": "~1.6.1",
-        "babel-preset-react": "~6.24.1"
-    },
-    "engineStrict": true,
-    "engines": {
-        "node": ">= 8"
-    }
+  "name": "@atlauncher/babel-preset-atlauncher",
+  "version": "0.1.0-12",
+  "description": "ATLauncher's babel preset.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ATLauncher/style-guide"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "babel"
+  ],
+  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ATLauncher/style-guide/issues"
+  },
+  "homepage": "https://github.com/ATLauncher/style-guide",
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "~6.24.1",
+    "babel-plugin-transform-dynamic-import": "~2.0.0",
+    "babel-plugin-transform-object-rest-spread": "~6.26.0",
+    "babel-plugin-transform-react-jsx": "~6.24.1",
+    "babel-plugin-transform-react-remove-prop-types": "~0.4.12",
+    "babel-plugin-transform-regenerator": "~6.26.0",
+    "babel-plugin-transform-runtime": "~6.23.0",
+    "babel-preset-env": "~1.6.1",
+    "babel-preset-react": "~6.24.1"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 8"
+  }
 }

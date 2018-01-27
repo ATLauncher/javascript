@@ -61,13 +61,13 @@ You can optionally provide an array of extra folders/files to clean in your `pac
 
 ```json
 {
-    "config": {
-        "atlauncher": {
-            "extraToClean": [
-                "cleanMeUp"
-            ]
-        }
+  "config": {
+    "atlauncher": {
+      "extraToClean": [
+        "cleanMeUp"
+      ]
     }
+  }
 }
 ```
 

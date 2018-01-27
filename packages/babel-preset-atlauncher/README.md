@@ -14,7 +14,7 @@ And then create (or replace) a `.babelrc` file in the root directory of your pro
 
 ```json
 {
-    "presets": ["@atlauncher/babel-preset-atlauncher"]
+  "presets": ["@atlauncher/babel-preset-atlauncher"]
 }
 ```
 
