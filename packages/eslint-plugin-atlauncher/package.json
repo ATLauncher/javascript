@@ -18,10 +18,10 @@
     },
     "homepage": "https://github.com/ATLauncher/style-guide",
     "dependencies": {
-        "requireindex": "^1.1.0"
+        "requireindex": "~1.1.0"
     },
     "devDependencies": {
-        "eslint": "^4.1.1"
+        "eslint": "~4.1.1"
     },
     "engineStrict": true,
     "engines": {

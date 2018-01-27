@@ -45,8 +45,8 @@
     "prefer-alphabetical-devDependencies": "error",
     "prefer-alphabetical-optionalDependencies": "error",
     "prefer-alphabetical-peerDependencies": "error",
-    "prefer-caret-version-dependencies": "error",
-    "prefer-caret-version-devDependencies": "error",
+    "prefer-tilde-version-dependencies": "error",
+    "prefer-tilde-version-devDependencies": "error",
 
     "name-format": "error",
     "version-format": "error",
