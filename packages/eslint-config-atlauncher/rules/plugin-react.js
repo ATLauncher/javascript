@@ -1,23 +1,41 @@
 module.exports = {
     settings: {
         react: {
-            version: '15.5.4',
+            version: '16.2.0',
         },
     },
     rules: {
+        // warns when trying to name boolean variables like `isEnabled` or `wasActive`
+        'react/boolean-prop-naming': 'warn',
+
+        // requires a type attribute on all buttons
+        'react/button-has-type': 'error',
+
+        // requires defaultProps do not have a corresponding `isRequired` propType
+        'react/default-props-match-prop-types': 'error',
+
+        // require access to object's properties are done through destructuring only
+        'react/destructuring-assignment': ['error', 'always'],
+
         // require setting of `displayName` property on components
         'react/display-name': 'error',
 
-        // forbids the use of `className` and `style` properties on components, only on root elements (div, span, etc)
-        'react/forbid-component-props': ['error', {
+        // forbids the use of `style` property on components, only on dom elements (div, span, etc)
+        'react/forbid-component-props': ['warn', {
             forbid: [
-                'className',
                 'style',
             ],
         }],
 
+        // forbids the use of `id` property on dom elements
+        'react/forbid-dom-props': ['warn', {
+            forbid: [
+                'id',
+            ],
+        }],
+
         // don't allow the use of any or array PropTypes as they're too vague
-        'react/forbid-prop-types': ['error', {
+        'react/forbid-prop-types': ['warn', {
             forbid: [
                 'any',
                 'array',
@@ -27,14 +45,17 @@ module.exports = {
         // don't allow using other components propTypes unless exported out the component
         'react/forbid-foreign-prop-types': 'error',
 
+        // don't allow the use of `this.state` within `setState` as it can cause issues
+        'react/no-access-state-in-setstate': 'error',
+
         // don't allow using array indexes as key's when looping over arrays for components
         'react/no-array-index-key': 'error',
 
         // don't allow children of a component to be passed in as a property, they should be done via JSX nesting
         'react/no-children-prop': 'error',
 
-        // warn when using `dangerouslySetInnerHTML` as we shouldn't be using it, but sometimes may be necessary
-        'react/no-danger': 'warn',
+        // don't allow using `dangerouslySetInnerHTML` as we shouldn't be using it, EVER
+        'react/no-danger': 'error',
 
         // don't allow using `dangerouslySetInnerHTML` as well as children via JSX nesting
         'react/no-danger-with-children': 'error',
@@ -62,11 +83,20 @@ module.exports = {
             ignoreStateless: false,
         }],
 
+        // don't allow defining `shouldComponentUpdate` when using a pure component
+        'react/no-redundant-should-component-update': 'error',
+
         // don't allow using the return value from `ReactDOM.render()`
         'react/no-render-return-value': 'error',
 
+        // shows an error for common typos
+        'react/no-typos': 'error',
+
         // don't allow using string ref attributes
         'react/no-string-refs': 'error',
+
+        // don't allow the use of `this` in stateless functional components
+        'react/no-this-in-sfc': 'error',
 
         // don't allow the use of unescaped entities in JSX
         'react/no-unescaped-entities': 'error',
@@ -77,8 +107,14 @@ module.exports = {
         // don't allow unused PropType's
         'react/no-unused-prop-types': 'error',
 
-        // requires all components to be written as ES6 classes and not via `React.createClass`
-        'react/prefer-es6-class': 'error',
+        // don't allow unused state
+        'react/no-unused-state': 'error',
+
+        // don't allow unused state
+        'react/no-unused-state': 'error',
+
+        // don't allow the use of `setState` in `componentWillUpdate`
+        'react/no-will-update-set-state': 'error',
 
         // ensures stateless components are used where possible over `React.Component` but allow `React.PureComponent`
         'react/prefer-stateless-function': ['warn', {
@@ -125,8 +161,11 @@ module.exports = {
         // all boolean attributes must be specified as `<A prop={true} />` rather than just `<A prop />`
         'react/jsx-boolean-value': ['error', 'always'],
 
-        // ensures any multiline components will have closing tag aligning with the opening tag
+        // ensures any multiline components will have closing bracket aligning with the opening tag
         'react/jsx-closing-bracket-location': 'error',
+
+        // ensures any multiline components will have closing tag aligning with the opening tag
+        'react/jsx-closing-tag-location': 'error',
 
         // don't allow spaces in between JSX variables like `<A prop={ test } />`
         'react/jsx-curly-spacing': ['error', 'never'],
@@ -159,6 +198,17 @@ module.exports = {
         // require the `key` property to be specified where needed
         'react/jsx-key': 'error',
 
+        // ensure that all multiline component props are limited to 1 per line
+        'react/jsx-max-props-per-line': ['error', {
+            maximum: 1,
+            when: 'multiline'
+        }],
+
+        // don't allow the use of arrow functions or `.bind` in render methods, except for refs
+        'react/jsx-no-bind': ['error', {
+            ignoreRefs: true
+        }],
+
         // don't allow the use of HTML comments and enforce JSX comment style
         'react/jsx-no-comment-textnodes': 'error',
 
@@ -173,6 +223,9 @@ module.exports = {
 
         // require all components use PascalCase
         'react/jsx-pascal-case': 'error',
+
+        // require a space before the closing tag
+        'react/jsx-space-before-closing': ['error', 'always'],
 
         // require a space before self closing tags such as `<A prop={prop} />` rather than `<A prop={prop}/>`
         'react/jsx-tag-spacing': ['error', {
@@ -189,8 +242,5 @@ module.exports = {
 
         // ensures multiline JSX is wrapped within parenthesis
         'react/jsx-wrap-multilines': 'error',
-
-        // prevent usage of setState in componentWillUpdate
-        'react/no-will-update-set-state': 'error',
     },
 };
