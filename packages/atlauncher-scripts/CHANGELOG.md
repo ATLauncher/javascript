@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0-21"></a>
+# [0.1.0-21](https://github.com/ATLauncher/style-guide/compare/@atlauncher/atlauncher-scripts@0.1.0-20...@atlauncher/atlauncher-scripts@0.1.0-21) (2018-01-28)
+
+
+### Bug Fixes
+
+* **atlauncher-scripts:** fix node_modules path not showing in lint:md ([738c387](https://github.com/ATLauncher/style-guide/commit/738c387))
+
+
+
+
 <a name="0.1.0-20"></a>
 # [0.1.0-20](https://github.com/ATLauncher/style-guide/compare/@atlauncher/atlauncher-scripts@0.1.0-19...@atlauncher/atlauncher-scripts@0.1.0-20) (2018-01-28)
 
