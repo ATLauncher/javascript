@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/atlauncher-scripts",
-  "version": "0.1.0-19",
+  "version": "0.1.0-20",
   "description": "Configuration and scripts for use with ATLauncher projects.",
   "keywords": [
     "javascript",
