@@ -4,7 +4,7 @@ const processArguments = [
     '--config',
     utils.getConfigFile('.markdownlint.json'),
     '--ignore',
-    utils.getNodeModulesPath(),
+    utils.getProjectPath('node_modules'),
     '--ignore',
     utils.getProjectPath('CHANGELOG.md'),
     utils.getProjectPath('**/*.md'),
