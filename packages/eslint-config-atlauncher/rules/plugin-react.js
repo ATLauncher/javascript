@@ -224,9 +224,6 @@ module.exports = {
         // require all components use PascalCase
         'react/jsx-pascal-case': 'error',
 
-        // require a space before the closing tag
-        'react/jsx-space-before-closing': ['error', 'always'],
-
         // require a space before self closing tags such as `<A prop={prop} />` rather than `<A prop={prop}/>`
         'react/jsx-tag-spacing': ['error', {
             closingSlash: 'never',
