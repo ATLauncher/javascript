@@ -172,11 +172,11 @@ function spawnSyncProcess(command = 'node', processes = [], workingDirectory = g
     }
 
     processesToRun.forEach((processToRun) => {
-        const commandArguments = processToRun.filter((p) => p);
+        const commandArguments = processToRun.filter(Boolean);
 
         console.log(chalk`{black.bgWhite Running '${command} ${commandArguments.join(' ')}'}\n`);
 
-        const result = spawn.sync(command, processToRun, {
+        const result = spawn.sync(command, commandArguments, {
             stdio: 'inherit',
             cwd: workingDirectory,
         });
