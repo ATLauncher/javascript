@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0-15"></a>
+# [0.1.0-15](https://github.com/ATLauncher/style-guide/compare/@atlauncher/babel-preset-atlauncher@0.1.0-14...@atlauncher/babel-preset-atlauncher@0.1.0-15) (2018-01-29)
+
+
+### Bug Fixes
+
+* **babel-preset-atlauncher:** fix react preset not having options ([5ad0758](https://github.com/ATLauncher/style-guide/commit/5ad0758))
+
+
+
+
 <a name="0.1.0-14"></a>
 # [0.1.0-14](https://github.com/ATLauncher/style-guide/compare/@atlauncher/babel-preset-atlauncher@0.1.0-13...@atlauncher/babel-preset-atlauncher@0.1.0-14) (2018-01-29)
 
