@@ -71,7 +71,7 @@ module.exports = function () {
             !isTest && [require('babel-plugin-transform-regenerator').default, { async: false }],
 
             // transform dynamic imports to require in test
-            isTest && require('babel-plugin-tansform-dynamic-import').default,
+            isTest && require('babel-plugin-transform-dynamic-import').default,
 
             // remove propTypes and their imports when in production
             isProduction && [require('babel-plugin-transform-react-remove-prop-types').default, { removeImport: true }],
