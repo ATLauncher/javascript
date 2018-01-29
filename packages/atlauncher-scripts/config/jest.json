@@ -2,7 +2,7 @@
   "bail": true,
   "testEnvironment": "node",
   "collectCoverageFrom": [
-    "src/**/*.js"
+    "<rootDir>/src/**/*.js"
   ],
   "coverageDirectory": "coverage",
   "coverageThreshold": {
@@ -14,6 +14,8 @@
     }
   },
   "testMatch": [
-    "**/?(*.)(spec).js"
+    "<rootDir>/src/**/__tests__/**/*.js",
+    "<rootDir>/src/**/?(*.)(spec|test).js",
+    "<rootDir>/test/**/?(*.)spec.js"
   ]
 }
