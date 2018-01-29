@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0-22"></a>
+# [0.1.0-22](https://github.com/ATLauncher/style-guide/compare/@atlauncher/atlauncher-scripts@0.1.0-21...@atlauncher/atlauncher-scripts@0.1.0-22) (2018-01-29)
+
+
+### Bug Fixes
+
+* **atlauncher-scripts:** fix running commands not filtering out booleans ([357481a](https://github.com/ATLauncher/style-guide/commit/357481a))
+
+
+### Features
+
+* **atlauncher-scripts:** update default jest.json file ([2870b64](https://github.com/ATLauncher/style-guide/commit/2870b64))
+
+
+
+
 <a name="0.1.0-21"></a>
 # [0.1.0-21](https://github.com/ATLauncher/style-guide/compare/@atlauncher/atlauncher-scripts@0.1.0-20...@atlauncher/atlauncher-scripts@0.1.0-21) (2018-01-28)
 
