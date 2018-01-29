@@ -48,36 +48,36 @@ module.exports = function () {
     return {
         presets: [
             // if in test or development environment then we're building for Node
-            (isTest || isDevelopment) && [require('babel-preset-env').default, envConfigNode],
+            (isTest || isDevelopment) && [require('babel-preset-env'), envConfigNode],
 
             // if production then we need to build based on what the final environment is
-            isProduction && [require('babel-preset-env').default, buildingForBrowser ? envConfigBrowser : envConfigNode],
+            isProduction && [require('babel-preset-env'), buildingForBrowser ? envConfigBrowser : envConfigNode],
 
-            // register development mode in development/test environments for react
-            [require('babel-preset-react').default, { development: (isDevelopment || isTest) }],
+            // react preset
+            require('babel-preset-react'),
         ].filter(Boolean),
 
         plugins: [
             // allows classes to have properties
-            require('babel-plugin-transform-class-properties').default,
+            require('babel-plugin-transform-class-properties'),
 
             // transforms rest/spread operator `...object`
-            [require('babel-plugin-transform-object-rest-spread').default, { useBuiltIns: true }],
+            [require('babel-plugin-transform-object-rest-spread'), { useBuiltIns: true }],
 
             // for async/await
-            [require('babel-plugin-transform-runtime').default, { helpers: false, polyfill: false }],
+            [require('babel-plugin-transform-runtime'), { helpers: false, polyfill: false }],
 
             // transform generator functions
-            !isTest && [require('babel-plugin-transform-regenerator').default, { async: false }],
+            !isTest && [require('babel-plugin-transform-regenerator'), { async: false }],
 
             // transform dynamic imports to require in test
             isTest && require('babel-plugin-transform-dynamic-import').default,
 
             // remove propTypes and their imports when in production
-            isProduction && [require('babel-plugin-transform-react-remove-prop-types').default, { removeImport: true }],
+            isProduction && [require('babel-plugin-transform-react-remove-prop-types'), { removeImport: true }],
 
             // for react
-            [require('babel-plugin-transform-react-jsx').default, { useBuiltIns: true }],
+            [require('babel-plugin-transform-react-jsx'), { useBuiltIns: true }],
         ].filter(Boolean),
     };
 };
