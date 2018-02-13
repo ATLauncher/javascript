@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.0-24"></a>
+# [0.1.0-24](https://github.com/ATLauncher/javascript/compare/@atlauncher/atlauncher-scripts@0.1.0-23...@atlauncher/atlauncher-scripts@0.1.0-24) (2018-02-13)
+
+
+### Features
+
+* **atlauncher-scripts:** add in ability to forceExit Jest ([ae985db](https://github.com/ATLauncher/javascript/commit/ae985db))
+
+
+
+
 <a name="0.1.0-23"></a>
 # [0.1.0-23](https://github.com/ATLauncher/javascript/compare/@atlauncher/atlauncher-scripts@0.1.0-22...@atlauncher/atlauncher-scripts@0.1.0-23) (2018-01-29)
 
