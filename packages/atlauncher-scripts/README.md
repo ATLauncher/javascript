@@ -61,13 +61,11 @@ You can optionally provide an array of extra folders/files to clean in your `pac
 
 ```json
 {
-  "config": {
-    "atlauncher": {
-      "extraToClean": [
-        "cleanMeUp"
-      ]
+    "config": {
+        "atlauncher": {
+            "extraToClean": ["cleanMeUp"]
+        }
     }
-  }
 }
 ```
 
@@ -104,7 +102,7 @@ Lints the `package.json` file.
 
 ### test
 
-`atlauncher-scripts test [--watch] [--debug] [--coverage]`
+`atlauncher-scripts test [--watch] [--debug] [--coverage] [--noConcurrency] [--forceExit]`
 
 You can provide a `--watch` switch to allow watching of your tests.
 
@@ -113,3 +111,5 @@ You can also provide a `--debug` switch to allow turning on debug mode.
 You can also provide a `--coverage` switch to do coverage reporting.
 
 You can also provide a `--noConcurrency` switch to not run tests in parallel (useful for CI).
+
+You can also provide a `--forceExit` switch to force exit the process when Jest finishes running.

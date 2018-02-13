@@ -7,6 +7,7 @@ const args = process.argv.slice(2);
 let watch = false;
 let debug = false;
 let coverage = false;
+let forceExit = false;
 let noConcurrency = false;
 
 if (args.length) {
@@ -26,6 +27,10 @@ if (args.length) {
         if (arg === '--noConcurrency') {
             noConcurrency = true;
         }
+
+        if (arg === '--forceExit') {
+            forceExit = true;
+        }
     });
 }
 
@@ -37,6 +42,7 @@ const processArguments = [
     watch && '--watch',
     debug && '--debug',
     coverage && '--coverage',
+    forceExit && '--forceExit',
     noConcurrency && '--runInBand',
 ];
 
