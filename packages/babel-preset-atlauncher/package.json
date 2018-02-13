@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ATLauncher/style-guide"
+    "url": "https://github.com/ATLauncher/javascript"
   },
   "publishConfig": {
     "access": "public"
@@ -16,9 +16,9 @@
   "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ATLauncher/style-guide/issues"
+    "url": "https://github.com/ATLauncher/javascript/issues"
   },
-  "homepage": "https://github.com/ATLauncher/style-guide",
+  "homepage": "https://github.com/ATLauncher/javascript",
   "dependencies": {
     "babel-plugin-transform-class-properties": "~6.24.1",
     "babel-plugin-transform-dynamic-import": "~2.0.0",

@@ -76,7 +76,7 @@ You can optionally provide an array of extra folders/files to clean in your `pac
 This is intended to be used with `husky` to provide a git hook on commit.
 
 It currently checks the commit message to make sure it's valid and follows
-[our guidelines](https://github.com/ATLauncher/style-guide/blob/master/commitlint-config-atlauncher/README.md).
+[our guidelines](https://github.com/ATLauncher/javascript/blob/master/commitlint-config-atlauncher/README.md).
 
 ### lint:js
 

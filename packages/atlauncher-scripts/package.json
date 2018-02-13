@@ -8,9 +8,9 @@
     "linting",
     "testing"
   ],
-  "homepage": "https://github.com/ATLauncher/style-guide",
+  "homepage": "https://github.com/ATLauncher/javascript",
   "bugs": {
-    "url": "https://github.com/ATLauncher/style-guide/issues"
+    "url": "https://github.com/ATLauncher/javascript/issues"
   },
   "license": "MIT",
   "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ATLauncher/style-guide"
+    "url": "https://github.com/ATLauncher/javascript"
   },
   "scripts": {
     "commitmsg": "commitlint -x @atlauncher/commitlint-config-atlauncher -e .git/COMMIT_EDITMSG"

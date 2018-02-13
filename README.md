@@ -30,7 +30,7 @@ Simply include into your project and use the `atlauncher-scripts` command.
 This is intended to allow all projects the ability to run commands the same way and evolve how we
 do certain things over time by just having it contained within one directory.
 
-* [More Info](https://github.com/ATLauncher/style-guide/blob/master/atlauncher-scripts/README.md)
+* [More Info](https://github.com/ATLauncher/javascript/tree/master/packages/atlauncher-scripts)
 * [NPM](https://www.npmjs.com/package/@atlauncher/atlauncher-scripts)
 
 ### @atlauncher/babel-preset-atlauncher
@@ -40,14 +40,14 @@ This package contains a preset for Babel which is setup to work for ATLauncher's
 It's intended to support all browsers and versions we need to and be a quick preset to get up and
 going quickly.
 
-* [More Info](https://github.com/ATLauncher/style-guide/blob/master/babel-present-atlauncher/README.md)
+* [More Info](https://github.com/ATLauncher/javascript/tree/master/packages/babel-present-atlauncher)
 * [NPM](https://www.npmjs.com/package/@atlauncher/babel-present-atlauncher)
 
 ### @atlauncher/commitlint-config-atlauncher
 
 This package ensures that all commits done to ATLauncher repositories follows our commit standards.
 
-* [More Info](https://github.com/ATLauncher/style-guide/blob/master/commitlint-config-atlauncher/README.md)
+* [More Info](https://github.com/ATLauncher/javascript/tree/master/packages/commitlint-config-atlauncher)
 * [NPM](https://www.npmjs.com/package/@atlauncher/commitlint-config-atlauncher)
 
 ### @atlauncher/eslint-config-atlauncher
@@ -57,7 +57,7 @@ This package contains our ESLint configs.
 This allows all ATLauncher projects to simply extend from this base config to ensure that all code
 is consistent and follows the same styling rules.
 
-* [More Info](https://github.com/ATLauncher/style-guide/blob/master/eslint-config-atlauncher/README.md)
+* [More Info](https://github.com/ATLauncher/javascript/tree/master/packages/eslint-config-atlauncher)
 * [NPM](https://www.npmjs.com/package/@atlauncher/eslint-config-atlauncher)
 
 ### @atlauncher/eslint-plugin-atlauncher
@@ -66,7 +66,7 @@ This package contains our custom ESLint rules.
 
 Currently only used to allow ignoring method names from requiring `@returns` JSDoc comments.
 
-* [More Info](https://github.com/ATLauncher/style-guide/blob/master/eslint-plugin-atlauncher/README.md)
+* [More Info](https://github.com/ATLauncher/javascript/tree/master/packages/eslint-plugin-atlauncher)
 * [NPM](https://www.npmjs.com/package/@atlauncher/eslint-plugin-atlauncher)
 
 ## Developing

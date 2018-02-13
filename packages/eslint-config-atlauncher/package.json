@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ATLauncher/style-guide"
+    "url": "https://github.com/ATLauncher/javascript"
   },
   "publishConfig": {
     "access": "public"
@@ -20,9 +20,9 @@
   "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ATLauncher/style-guide/issues"
+    "url": "https://github.com/ATLauncher/javascript/issues"
   },
-  "homepage": "https://github.com/ATLauncher/style-guide",
+  "homepage": "https://github.com/ATLauncher/javascript",
   "devDependencies": {
     "@atlauncher/eslint-plugin-atlauncher": "~0.2.1",
     "babel-eslint": "~8.2.1",

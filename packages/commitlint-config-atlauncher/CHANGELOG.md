@@ -9,4 +9,4 @@ See [standard-version](https://github.com/conventional-changelog/standard-versio
 
 ### Features
 
-* **commitlint-config-atlauncher:** add in commitlint config ([50f6457](https://github.com/ATLauncher/style-guide/commit/50f6457))
+* **commitlint-config-atlauncher:** add in commitlint config ([50f6457](https://github.com/ATLauncher/javascript/commit/50f6457))
