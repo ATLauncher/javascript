@@ -1,4 +1,6 @@
 # ATLauncher Style Guide
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FATLauncher%2Fjavascript.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FATLauncher%2Fjavascript?ref=badge_shield)
+
 
 This is the style guide for ATLauncher.
 
@@ -105,3 +107,7 @@ Or for a single package:
 ```bash
 npm run publish:prerelease -- --scope @atlauncher/package-name
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FATLauncher%2Fjavascript.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FATLauncher%2Fjavascript?ref=badge_large)
