@@ -1,12 +1,12 @@
-# ATLauncher Style Guide
+# @atlauncher/javascript
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FATLauncher%2Fjavascript.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FATLauncher%2Fjavascript?ref=badge_shield)
 
-
-This is the style guide for ATLauncher.
+Monorepo of different packages used by JavaScript/TypeScript based projects at ATLauncher.
 
 ## Contents
 
-This repository is a mono repo powered with Lerna and contains the following packages:
+This repository is a monorepo powered with Lerna and contains the following packages:
 
 * @atlauncher/atlauncher-scripts
 * @atlauncher/babel-preset-atlauncher
@@ -19,18 +19,17 @@ This repository is a mono repo powered with Lerna and contains the following pac
 Each package is a single npm package within the `` scope and is independently published
 from one another.
 
-Lerna provides the ability to link the modules up with one another so that packages can be devleoped
-with a dependency on another package in this mono repo without the need to publish ahead of time.
+Lerna provides the ability to link the modules up with one another so that packages can be developed with a dependency
+on another package in this monorepo without the need to publish ahead of time.
 
 ### @atlauncher/atlauncher-scripts
 
-This package provides all the scripts needed to run, test, lint, build and more for ATLauncher
-projects.
+This package provides all the scripts needed to run, test, lint, build and more for ATLauncher projects.
 
 Simply include into your project and use the `atlauncher-scripts` command.
 
-This is intended to allow all projects the ability to run commands the same way and evolve how we
-do certain things over time by just having it contained within one directory.
+This is intended to allow all projects the ability to run commands the same way and evolve how we do certain things over
+time by just having it contained within one directory.
 
 * [More Info](https://github.com/ATLauncher/javascript/tree/master/packages/atlauncher-scripts)
 * [NPM](https://www.npmjs.com/package/@atlauncher/atlauncher-scripts)
@@ -39,8 +38,7 @@ do certain things over time by just having it contained within one directory.
 
 This package contains a preset for Babel which is setup to work for ATLauncher's projects.
 
-It's intended to support all browsers and versions we need to and be a quick preset to get up and
-going quickly.
+It's intended to support all browsers and versions we need to and be a quick preset to get up and going quickly.
 
 * [More Info](https://github.com/ATLauncher/javascript/tree/master/packages/babel-present-atlauncher)
 * [NPM](https://www.npmjs.com/package/@atlauncher/babel-present-atlauncher)
@@ -56,8 +54,8 @@ This package ensures that all commits done to ATLauncher repositories follows ou
 
 This package contains our ESLint configs.
 
-This allows all ATLauncher projects to simply extend from this base config to ensure that all code
-is consistent and follows the same styling rules.
+This allows all ATLauncher projects to simply extend from this base config to ensure that all code is consistent and
+follows the same styling rules.
 
 * [More Info](https://github.com/ATLauncher/javascript/tree/master/packages/eslint-config-atlauncher)
 * [NPM](https://www.npmjs.com/package/@atlauncher/eslint-config-atlauncher)
@@ -108,6 +106,6 @@ Or for a single package:
 npm run publish:prerelease -- --scope @atlauncher/package-name
 ```
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FATLauncher%2Fjavascript.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FATLauncher%2Fjavascript?ref=badge_large)

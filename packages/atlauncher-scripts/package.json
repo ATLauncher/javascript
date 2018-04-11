@@ -8,7 +8,11 @@
     "url": "https://github.com/ATLauncher/javascript/issues"
   },
   "license": "MIT",
-  "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
+  "author": {
+    "name": "Ryan Dowling",
+    "email": "ryan.dowling@atlauncher.com",
+    "url": "https://github.com/RyanTheAllmighty"
+  },
   "bin": {
     "atlauncher-scripts": "./bin/atlauncher-scripts.js"
   },
