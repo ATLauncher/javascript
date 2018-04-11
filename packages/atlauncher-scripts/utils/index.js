@@ -22,6 +22,15 @@ function getLernaPackagePaths() {
 }
 
 /**
+ * Determines if atlauncher-scripts was run from a lerna root.
+ *
+ * @returns {boolean}
+ */
+function wasRunInLernaRoot() {
+    return getLernaPackagePaths().length;
+}
+
+/**
  * This ensures that the given path always ends with a / (or not);
  *
  * @param {string} path
@@ -275,6 +284,7 @@ module.exports = {
     getProjectPath,
     getProjectPaths,
     spawnSyncProcess,
+    wasRunInLernaRoot,
     getNodeModulesPath,
     getNodeModulesBinPath,
     getConfigFromPackageJson,

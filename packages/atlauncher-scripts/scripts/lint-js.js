@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const utils = require('../utils');
 
 const args = process.argv.slice(2);
@@ -17,6 +18,11 @@ if (args.length) {
 }
 
 if (watch) {
+    if (utils.wasRunInLernaRoot()) {
+        console.log(chalk.white.bgRed('Cannot run watch within a lerna root'));
+        process.exit(1);
+    }
+
     const processArguments = [utils.getProjectPath('src/**/*.js'), '--initial', '-c npm run lint:js'];
 
     utils.spawnSyncProcess(utils.getNodeModulesBinPath('chokidar'), processArguments);
@@ -36,4 +42,4 @@ const processArguments = [
     debug && '--debug',
 ].concat(utils.getProjectPaths('**/*.js'));
 
-utils.spawnSyncProcess(utils.getNodeModulesBinPath('eslint'), processArgumentsS);
+utils.spawnSyncProcess(utils.getNodeModulesBinPath('eslint'), processArguments);
