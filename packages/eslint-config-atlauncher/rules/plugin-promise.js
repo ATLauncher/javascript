@@ -17,5 +17,11 @@ module.exports = {
 
         // prefer using await to `.then`
         'promise/prefer-await-to-then': 'error',
+
+        // don't allow using new keyword with Promise statics
+        'promise/no-new-statics': 'error',
+
+        // make sure all Promise calls have valid parameters
+        'promise/valid-params': 'error',
     },
 };

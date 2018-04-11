@@ -34,21 +34,37 @@ module.exports = {
         'import/no-amd': 'error',
 
         // make sure all imports appear first in files
-        'import/first': ['error', {
-            'absolute-first': true,
-        }],
+        'import/first': [
+            'error',
+            {
+                'absolute-first': true,
+            },
+        ],
 
         // don't allow imports from the same modules
         'import/no-duplicates': 'error',
 
         // don't use the `.js` extension in the import path for local files
-        'import/extensions': ['error', 'always', {
-            js: 'never',
-        }],
+        'import/extensions': [
+            'error',
+            'always',
+            {
+                js: 'never',
+            },
+        ],
 
         // make sure there is one new line after imports
-        'import/newline-after-import': ['error', {
-            count: 1,
-        }],
+        'import/newline-after-import': [
+            'error',
+            {
+                count: 1,
+            },
+        ],
+
+        // don't allow modules to import themselves
+        'import/no-self-import': 'error',
+
+        // don't allow useless imports
+        'import/no-useless-path-segments': 'error',
     },
 };

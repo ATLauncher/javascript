@@ -25,31 +25,31 @@
   "homepage": "https://github.com/ATLauncher/javascript",
   "devDependencies": {
     "@atlauncher/eslint-plugin-atlauncher": "~0.2.1",
-    "babel-eslint": "~8.2.1",
-    "eslint": "~4.16.0",
+    "babel-eslint": "~8.2.2",
+    "eslint": "~4.19.1",
     "eslint-plugin-eslint-comments": "~2.0.2",
     "eslint-plugin-filenames": "~1.2.0",
     "eslint-plugin-immutable": "~1.0.0",
-    "eslint-plugin-import": "~2.8.0",
+    "eslint-plugin-import": "~2.10.0",
     "eslint-plugin-jsx-a11y": "~6.0.3",
     "eslint-plugin-new-with-error": "~1.1.0",
     "eslint-plugin-no-loops": "~0.3.0",
-    "eslint-plugin-promise": "~3.6.0",
-    "eslint-plugin-react": "~7.6.0"
+    "eslint-plugin-promise": "~3.7.0",
+    "eslint-plugin-react": "~7.7.0"
   },
   "peerDependencies": {
     "@atlauncher/eslint-plugin-atlauncher": "~0.2.1",
-    "babel-eslint": "~8.2.1",
-    "eslint": "~4.16.0",
+    "babel-eslint": "~8.2.2",
+    "eslint": "~4.19.1",
     "eslint-plugin-eslint-comments": "~2.0.2",
     "eslint-plugin-filenames": "~1.2.0",
     "eslint-plugin-immutable": "~1.0.0",
-    "eslint-plugin-import": "~2.8.0",
+    "eslint-plugin-import": "~2.10.0",
     "eslint-plugin-jsx-a11y": "~6.0.3",
     "eslint-plugin-new-with-error": "~1.1.0",
     "eslint-plugin-no-loops": "~0.3.0",
-    "eslint-plugin-promise": "~3.6.0",
-    "eslint-plugin-react": "~7.6.0"
+    "eslint-plugin-promise": "~3.7.0",
+    "eslint-plugin-react": "~7.7.0"
   },
   "engineStrict": true,
   "engines": {

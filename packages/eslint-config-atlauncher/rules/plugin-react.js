@@ -21,26 +21,28 @@ module.exports = {
         'react/display-name': 'error',
 
         // forbids the use of `style` property on components, only on dom elements (div, span, etc)
-        'react/forbid-component-props': ['warn', {
-            forbid: [
-                'style',
-            ],
-        }],
+        'react/forbid-component-props': [
+            'warn',
+            {
+                forbid: ['style'],
+            },
+        ],
 
         // forbids the use of `id` property on dom elements
-        'react/forbid-dom-props': ['warn', {
-            forbid: [
-                'id',
-            ],
-        }],
+        'react/forbid-dom-props': [
+            'warn',
+            {
+                forbid: ['id'],
+            },
+        ],
 
         // don't allow the use of any or array PropTypes as they're too vague
-        'react/forbid-prop-types': ['warn', {
-            forbid: [
-                'any',
-                'array',
-            ],
-        }],
+        'react/forbid-prop-types': [
+            'warn',
+            {
+                forbid: ['any', 'array'],
+            },
+        ],
 
         // don't allow using other components propTypes unless exported out the component
         'react/forbid-foreign-prop-types': 'error',
@@ -79,9 +81,12 @@ module.exports = {
         'react/no-is-mounted': 'error',
 
         // don't allow more than one component per file, even stateless components
-        'react/no-multi-comp': ['error', {
-            ignoreStateless: false,
-        }],
+        'react/no-multi-comp': [
+            'error',
+            {
+                ignoreStateless: false,
+            },
+        ],
 
         // don't allow defining `shouldComponentUpdate` when using a pure component
         'react/no-redundant-should-component-update': 'error',
@@ -117,9 +122,12 @@ module.exports = {
         'react/no-will-update-set-state': 'error',
 
         // ensures stateless components are used where possible over `React.Component` but allow `React.PureComponent`
-        'react/prefer-stateless-function': ['warn', {
-            ignorePureComponents: true,
-        }],
+        'react/prefer-stateless-function': [
+            'warn',
+            {
+                ignorePureComponents: true,
+            },
+        ],
 
         // ensures PropType's are written and contain all properties are added into it
         'react/prop-types': 'error',
@@ -137,20 +145,15 @@ module.exports = {
         'react/self-closing-comp': 'error',
 
         // ensures correct ordering of methods in a class component
-        'react/sort-comp': ['error', {
-            order: [
-                'static-methods',
-                'lifecycle',
-                'everything-else',
-                'rendering',
-            ],
-            groups: {
-                rendering: [
-                    '/^render.+$/',
-                    'render',
-                ],
+        'react/sort-comp': [
+            'error',
+            {
+                order: ['static-methods', 'lifecycle', 'everything-else', 'rendering'],
+                groups: {
+                    rendering: ['/^render.+$/', 'render'],
+                },
             },
-        }],
+        ],
 
         // require style properties to be defined in a variable
         'react/style-prop-object': 'error',
@@ -174,20 +177,24 @@ module.exports = {
         'react/jsx-equals-spacing': ['error', 'never'],
 
         // only allow naming components as .js and not .jsx
-        'react/jsx-filename-extension': ['error', {
-            extensions: [
-                '.js',
-            ],
-        }],
+        'react/jsx-filename-extension': [
+            'error',
+            {
+                extensions: ['.js'],
+            },
+        ],
 
         // require any multiline components to have the first property on a new line
         'react/jsx-first-prop-new-line': ['error', 'multiline'],
 
         // ensure all properties use event handlers prefixed with `on` and class methods prefixed with `handle`
-        'react/jsx-handler-names': ['error', {
-            eventHandlerPrefix: 'handle',
-            eventHandlerPropPrefix: 'on',
-        }],
+        'react/jsx-handler-names': [
+            'error',
+            {
+                eventHandlerPrefix: 'handle',
+                eventHandlerPropPrefix: 'on',
+            },
+        ],
 
         // ensure all indents in JSX use 4 spaces
         'react/jsx-indent': ['error', 4],
@@ -199,15 +206,21 @@ module.exports = {
         'react/jsx-key': 'error',
 
         // ensure that all multiline component props are limited to 1 per line
-        'react/jsx-max-props-per-line': ['error', {
-            maximum: 1,
-            when: 'multiline'
-        }],
+        'react/jsx-max-props-per-line': [
+            'error',
+            {
+                maximum: 1,
+                when: 'multiline',
+            },
+        ],
 
         // don't allow the use of arrow functions or `.bind` in render methods, except for refs
-        'react/jsx-no-bind': ['error', {
-            ignoreRefs: true
-        }],
+        'react/jsx-no-bind': [
+            'error',
+            {
+                ignoreRefs: true,
+            },
+        ],
 
         // don't allow the use of HTML comments and enforce JSX comment style
         'react/jsx-no-comment-textnodes': 'error',
@@ -225,11 +238,14 @@ module.exports = {
         'react/jsx-pascal-case': 'error',
 
         // require a space before self closing tags such as `<A prop={prop} />` rather than `<A prop={prop}/>`
-        'react/jsx-tag-spacing': ['error', {
-            closingSlash: 'never',
-            beforeSelfClosing: 'always',
-            afterOpening: 'never',
-        }],
+        'react/jsx-tag-spacing': [
+            'error',
+            {
+                closingSlash: 'never',
+                beforeSelfClosing: 'always',
+                afterOpening: 'never',
+            },
+        ],
 
         // ensures components that import React don't show it as being unused
         'react/jsx-uses-react': 'error',
@@ -239,5 +255,8 @@ module.exports = {
 
         // ensures multiline JSX is wrapped within parenthesis
         'react/jsx-wrap-multilines': 'error',
+
+        // forbids using another components propTypes unless they're exported
+        'react/forbid-foreign-prop-types': 'error',
     },
 };
