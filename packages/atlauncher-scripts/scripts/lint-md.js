@@ -4,10 +4,12 @@ const processArguments = [
     '--config',
     utils.getConfigFile('.markdownlint.json'),
     '--ignore',
-    utils.getProjectPath('node_modules'),
+    '**/node_modules/**',
     '--ignore',
-    utils.getProjectPath('CHANGELOG.md'),
-    utils.getProjectPath('**/*.md'),
+    '**/coverage/**',
+    '--ignore',
+    '**/CHANGELOG.md',
+    '**/*.md',
 ];
 
 utils.spawnSyncProcess(utils.getNodeModulesBinPath('markdownlint'), processArguments);
