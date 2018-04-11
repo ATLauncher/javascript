@@ -1,21 +1,15 @@
 {
   "bail": true,
   "testEnvironment": "node",
-  "collectCoverageFrom": [
-    "<rootDir>/src/**/*.js"
-  ],
+  "collectCoverageFrom": ["<rootDir>/**/*.js"],
   "coverageDirectory": "coverage",
   "coverageThreshold": {
     "global": {
-        "branches": 50,
-        "functions": 50,
-        "lines": 50,
-        "statements": 50
+      "branches": 50,
+      "functions": 50,
+      "lines": 50,
+      "statements": 50
     }
   },
-  "testMatch": [
-    "<rootDir>/src/**/__tests__/**/*.js",
-    "<rootDir>/src/**/?(*.)(spec|test).js",
-    "<rootDir>/test/**/?(*.)spec.js"
-  ]
+  "testMatch": ["<rootDir>/**/__tests__/**/*.js"]
 }
