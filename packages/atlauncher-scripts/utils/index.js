@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
+const globFs = require('glob-fs');
 const spawn = require('cross-spawn');
 const isWindows = require('is-windows');
 
@@ -82,6 +83,30 @@ function getProjectPaths(pathString = '') {
     }
 
     return paths;
+}
+
+/**
+ * This is similar to getProjectPaths but will make sure that any packages defined in lerna.json with '*' will expand
+ * out.
+ *
+ * @param {string} pathString
+ * @returns {string[]}
+ */
+function getExplicitProjectPaths(pathString = '') {
+    const paths = getLernaPackagePaths();
+
+    let pathsToReturn = paths.filter((string) => !string.endsWith('*'));
+    const pathsWithGlobs = paths.filter((string) => string.endsWith('*'));
+
+    pathsWithGlobs.forEach((thePath) => {
+        pathsToReturn = pathsToReturn.concat(globFs({ gitignore: true }).readdirSync(thePath));
+    });
+
+    const returningPaths = pathsToReturn
+        .map((thePath) => thePath.replace('*', ''))
+        .map((thePath) => path.resolve(process.cwd(), thePath, pathString));
+
+    return returningPaths;
 }
 
 /**
@@ -273,7 +298,10 @@ function spawnSyncProcess(command = 'node', processes = [], workingDirectory = g
             process.exit(1);
         }
 
-        process.exit(result.status);
+        // exit if status was not 0
+        if (result.status !== 0) {
+            process.exit(result.status);
+        }
     });
 }
 
@@ -287,5 +315,6 @@ module.exports = {
     wasRunInLernaRoot,
     getNodeModulesPath,
     getNodeModulesBinPath,
+    getExplicitProjectPaths,
     getConfigFromPackageJson,
 };

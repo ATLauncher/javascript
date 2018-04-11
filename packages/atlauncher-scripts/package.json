@@ -2,12 +2,7 @@
   "name": "@atlauncher/atlauncher-scripts",
   "version": "0.1.0-24",
   "description": "Configuration and scripts for use with ATLauncher projects.",
-  "keywords": [
-    "javascript",
-    "scripts",
-    "linting",
-    "testing"
-  ],
+  "keywords": ["javascript", "scripts", "linting", "testing"],
   "homepage": "https://github.com/ATLauncher/javascript",
   "bugs": {
     "url": "https://github.com/ATLauncher/javascript/issues"
@@ -46,6 +41,7 @@
     "eslint-plugin-no-loops": "~0.3.0",
     "eslint-plugin-promise": "~3.6.0",
     "eslint-plugin-react": "~7.6.0",
+    "glob-fs": "~0.1.7",
     "is-windows": "~1.0.1",
     "jest": "~22.1.4",
     "markdownlint": "~0.7.0",

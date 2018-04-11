@@ -1,9 +1,12 @@
 const utils = require('../utils');
 
-const processArguments = [
+const packageJsons = [utils.getProjectPath('package.json')].concat(utils.getExplicitProjectPaths('package.json'));
+
+const processArguments = packageJsons.map((file) => [
     '--rules-file',
     utils.getConfigFile('.npmpackagejsonlintrc'),
-    utils.getConfigFile('package.json'),
-];
+    '--file',
+    file,
+]);
 
 utils.spawnSyncProcess(utils.getNodeModulesBinPath('pjl-cli'), processArguments);
