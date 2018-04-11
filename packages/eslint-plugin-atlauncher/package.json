@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/eslint-plugin-atlauncher",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Custom ESLint rules for use with eslint-config-atlauncher",
   "main": "lib/index.js",
   "repository": {
@@ -10,7 +10,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": ["eslint", "eslintplugin", "eslint-plugin"],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
   "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
   "license": "MIT",
   "bugs": {

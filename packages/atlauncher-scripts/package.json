@@ -1,8 +1,13 @@
 {
   "name": "@atlauncher/atlauncher-scripts",
-  "version": "0.1.0-24",
+  "version": "0.1.0",
   "description": "Configuration and scripts for use with ATLauncher projects.",
-  "keywords": ["javascript", "scripts", "linting", "testing"],
+  "keywords": [
+    "javascript",
+    "scripts",
+    "linting",
+    "testing"
+  ],
   "homepage": "https://github.com/ATLauncher/javascript",
   "bugs": {
     "url": "https://github.com/ATLauncher/javascript/issues"
@@ -24,10 +29,10 @@
     "commitmsg": "commitlint -x @atlauncher/commitlint-config-atlauncher -e .git/COMMIT_EDITMSG"
   },
   "dependencies": {
-    "@atlauncher/babel-preset-atlauncher": "~0.1.0-15",
-    "@atlauncher/commitlint-config-atlauncher": "~0.1.0",
-    "@atlauncher/eslint-config-atlauncher": "~0.1.0-16",
-    "@atlauncher/eslint-plugin-atlauncher": "~0.2.1",
+    "@atlauncher/babel-preset-atlauncher": "0.1.0",
+    "@atlauncher/commitlint-config-atlauncher": "0.1.1",
+    "@atlauncher/eslint-config-atlauncher": "0.1.0",
+    "@atlauncher/eslint-plugin-atlauncher": "0.3.0",
     "@commitlint/cli": "~6.1.3",
     "babel-cli": "~6.26.0",
     "babel-eslint": "~8.2.2",

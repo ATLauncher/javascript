@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/babel-preset-atlauncher",
-  "version": "0.1.0-15",
+  "version": "0.1.0",
   "description": "ATLauncher's babel preset.",
   "main": "index.js",
   "repository": {
@@ -10,7 +10,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": ["babel"],
+  "keywords": [
+    "babel"
+  ],
   "author": {
     "name": "Ryan Dowling",
     "email": "ryan.dowling@atlauncher.com",
