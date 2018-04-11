@@ -17,11 +17,7 @@ if (args.length) {
 }
 
 if (watch) {
-    const processArguments = [
-        utils.getProjectPath('src/**/*.js'),
-        '--initial',
-        '-c npm run lint:js',
-    ];
+    const processArguments = [utils.getProjectPath('src/**/*.js'), '--initial', '-c npm run lint:js'];
 
     utils.spawnSyncProcess(utils.getNodeModulesBinPath('chokidar'), processArguments);
 
@@ -33,8 +29,11 @@ const processArguments = [
     utils.getConfigFile('.eslintrc'),
     '--ignore-path',
     utils.getConfigFile('.eslintignore'),
+    '--ignore-pattern',
+    '**/node_modules/**',
+    '--ignore-pattern',
+    '**/coverage/**',
     debug && '--debug',
-    utils.getProjectPath('src/**/*.js'),
-];
+].concat(utils.getProjectPaths('**/*.js'));
 
-utils.spawnSyncProcess(utils.getNodeModulesBinPath('eslint'), processArguments);
+utils.spawnSyncProcess(utils.getNodeModulesBinPath('eslint'), processArgumentsS);

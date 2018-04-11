@@ -5,13 +5,74 @@ const spawn = require('cross-spawn');
 const isWindows = require('is-windows');
 
 /**
- * This gets a path to the project (where atlauncher-scripts was called from).
+ * This will read the lerna.json file (if available).
+ *
+ * @returns {string[]}
+ */
+function getLernaPackagePaths() {
+    const lernaJsonPath = path.resolve(process.cwd(), 'lerna.json');
+
+    if (!fs.existsSync(lernaJsonPath)) {
+        return [];
+    }
+
+    const { packages = [] } = JSON.parse(fs.readFileSync(lernaJsonPath, 'utf8'));
+
+    return packages;
+}
+
+/**
+ * This ensures that the given path always ends with a / (or not);
+ *
+ * @param {string} path
+ * @param {boolean} [ensureLastSlash=true]
+ * @returns string
+ */
+function ensureLastSlash(path, ensureLastSlash = true) {
+    if (ensureLastSlash && path.substr(path, -1) !== '/') {
+        return `${path}/`;
+    }
+
+    if (!ensureLastSlash && path.substr(path, -1) === '/') {
+        return path.substr(path, 0, -1);
+    }
+
+    return path;
+}
+
+/**
+ * This gets a path (or paths if lerna) to the project (where atlauncher-scripts was called from).
  *
  * @param {string} [pathString=''] the path to get, otherwise the root
- * @returns {string}
+ * @param {boolean} [lernaCheck=false] if we should check for lerna
+ * @returns {string|string[]}
  */
-function getProjectPath(pathString = '') {
+function getProjectPath(pathString = '', lernaCheck = false) {
+    if (lernaCheck) {
+        const lernaPackages = getLernaPackagePaths();
+
+        if (lernaPackages.length) {
+            return lernaPackages.map((package) => path.resolve(process.cwd(), ensureLastSlash(package), pathString));
+        }
+    }
+
     return path.resolve(process.cwd(), pathString);
+}
+
+/**
+ * This gets the paths (if lerna) to the project (where atlauncher-scripts was called from).
+ *
+ * @param {string} [pathString=''] the path to get, otherwise the root
+ * @returns {string[]}
+ */
+function getProjectPaths(pathString = '') {
+    const paths = getProjectPath(pathString, true);
+
+    if (!Array.isArray(paths)) {
+        return [paths];
+    }
+
+    return paths;
 }
 
 /**
@@ -186,17 +247,17 @@ function spawnSyncProcess(command = 'node', processes = [], workingDirectory = g
                 console.log(
                     chalk.white.bgRed(
                         'Commit Linting failed because the process exited too early. ' +
-                        'This probably means the system ran out of memory or someone called ' +
-                        '`kill -9` on the process.'
-                    )
+                            'This probably means the system ran out of memory or someone called ' +
+                            '`kill -9` on the process.',
+                    ),
                 );
             } else if (result.signal === 'SIGTERM') {
                 console.log(
                     chalk.white.bgRed(
                         'Commit Linting failed because the process exited too early. ' +
-                        'Someone might have called `kill` or `killall`, or the system could ' +
-                        'be shutting down.'
-                    )
+                            'Someone might have called `kill` or `killall`, or the system could ' +
+                            'be shutting down.',
+                    ),
                 );
             }
 
@@ -212,6 +273,7 @@ module.exports = {
     getScripts,
     getConfigFile,
     getProjectPath,
+    getProjectPaths,
     spawnSyncProcess,
     getNodeModulesPath,
     getNodeModulesBinPath,
