@@ -82,7 +82,7 @@ will run a npm install and link and cross dependencies.
 
 ## Publishing
 
-### Production
+To publish simply run the following:
 
 ```bash
 npm run publish
@@ -92,18 +92,6 @@ Or for a single package:
 
 ```bash
 npm run publish -- --scope @atlauncher/package-name
-```
-
-### Testing versions
-
-```bash
-npm run publish:prerelease
-```
-
-Or for a single package:
-
-```bash
-npm run publish:prerelease -- --scope @atlauncher/package-name
 ```
 
 ## License

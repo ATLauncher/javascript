@@ -1,12 +1,6 @@
 {
-  "lerna": "2.8.0",
-  "packages": [
-    "packages/atlauncher-scripts",
-    "packages/babel-preset-atlauncher",
-    "packages/commitlint-config-atlauncher",
-    "packages/eslint-config-atlauncher",
-    "packages/eslint-plugin-atlauncher"
-  ],
+  "lerna": "2.10.1",
+  "packages": ["packages/*"],
   "commands": {
     "publish": {
       "ignore": [
@@ -19,7 +13,6 @@
         ".npmignore",
         ".nvmrc",
         "LICENSE",
-        "mocha.opts",
         "package-lock.json"
       ]
     }

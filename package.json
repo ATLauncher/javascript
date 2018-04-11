@@ -18,15 +18,17 @@
     "url": "git+https://github.com/ATLauncher/next.git"
   },
   "devDependencies": {
-    "husky": "~0.14.3",
-    "lerna": "~2.8.0"
+    "husky": "~1.0.0-rc.1",
+    "lerna": "~2.10.1"
   },
   "scripts": {
-    "commitmsg": "lerna run --scope @atlauncher/atlauncher-scripts commitmsg",
     "postinstall": "lerna bootstrap",
-    "publish": "lerna publish --conventional-commits --exact -m \"chore: publish\"",
-    "publish:prerelease":
-      "lerna publish --conventional-commits --exact --cd-version=prerelease -m \"chore: publish prerelease\""
+    "publish": "lerna publish --conventional-commits --exact -m \"chore: publish\""
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "lerna run --scope @atlauncher/atlauncher-scripts commitmsg"
+    }
   },
   "engineStrict": true,
   "engines": {
