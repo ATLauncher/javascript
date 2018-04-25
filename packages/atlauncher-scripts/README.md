@@ -53,9 +53,13 @@ This will build the files in the `src/` directory with babel and put the compile
 
 ### clean
 
-`atlauncher-scripts clean [--dry-run]`
+`atlauncher-scripts clean [--dry-run] [--lock-files] [--node-modules]`
 
 You can provide a `--dry-run` switch to not make any changes to the file system.
+
+You can provide a `--lock-files` switch to clean up Yarn and NPM lock files, which aren't cleaned by default.
+
+You can provide a `--node-modules` switch to clean up the `node_modules` folder, which isn't cleaned by default.
 
 You can optionally provide an array of extra folders/files to clean in your `package.json`:
 
