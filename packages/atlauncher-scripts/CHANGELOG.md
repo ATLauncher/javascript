@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/ATLauncher/javascript/compare/@atlauncher/atlauncher-scripts@0.1.0...@atlauncher/atlauncher-scripts@0.2.0) (2018-04-25)
+
+
+### Features
+
+* add in more files for the clean command and more flags for control ([fc7d6c0](https://github.com/ATLauncher/javascript/commit/fc7d6c0))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2018-04-11)
 
