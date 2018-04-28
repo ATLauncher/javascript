@@ -27,9 +27,6 @@ module.exports = {
         // don't allow importing on `var` or `let`
         'import/no-mutable-exports': 'error',
 
-        // don't allow unambiguous imports
-        'import/unambiguous': 'warn',
-
         // ensure no amd modules
         'import/no-amd': 'error',
 
