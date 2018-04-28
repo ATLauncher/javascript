@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/eslint-config-atlauncher",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ATLauncher's ESLint config.",
   "main": "index.js",
   "repository": {
@@ -10,7 +10,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": ["eslint", "eslintconfig", "config", "javascript", "styleguide"],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
   "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
   "license": "MIT",
   "bugs": {

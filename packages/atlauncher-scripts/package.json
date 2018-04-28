@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/atlauncher-scripts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Configuration and scripts for use with ATLauncher projects.",
   "keywords": [
     "javascript",
@@ -31,7 +31,7 @@
   "dependencies": {
     "@atlauncher/babel-preset-atlauncher": "0.1.0",
     "@atlauncher/commitlint-config-atlauncher": "0.1.1",
-    "@atlauncher/eslint-config-atlauncher": "0.1.0",
+    "@atlauncher/eslint-config-atlauncher": "0.1.1",
     "@atlauncher/eslint-plugin-atlauncher": "0.3.0",
     "@commitlint/cli": "~6.1.3",
     "babel-cli": "~6.26.0",

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/ATLauncher/javascript/compare/@atlauncher/eslint-config-atlauncher@0.1.0...@atlauncher/eslint-config-atlauncher@0.1.1) (2018-04-28)
+
+
+### Bug Fixes
+
+* remove eslint-plugin-immutable ([a6a54e4](https://github.com/ATLauncher/javascript/commit/a6a54e4))
+* **eslint-plugin-atlauncher:** remove import/unambiguous rule ([6369512](https://github.com/ATLauncher/javascript/commit/6369512))
+
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2018-04-11)
 
