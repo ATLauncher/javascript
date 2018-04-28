@@ -305,7 +305,6 @@ function spawnSyncProcess(command = 'node', processes = [], workingDirectory = g
     });
 }
 
-// eslint-disable-next-line immutable/no-mutation
 module.exports = {
     getScripts,
     getConfigFile,

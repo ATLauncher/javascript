@@ -10,13 +10,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "javascript",
-    "styleguide"
-  ],
+  "keywords": ["eslint", "eslintconfig", "config", "javascript", "styleguide"],
   "author": "Ryan Dowling (https://twitter.com/@RyanAllmighty1)",
   "license": "MIT",
   "bugs": {
@@ -29,7 +23,6 @@
     "eslint": "~4.19.1",
     "eslint-plugin-eslint-comments": "~2.0.2",
     "eslint-plugin-filenames": "~1.2.0",
-    "eslint-plugin-immutable": "~1.0.0",
     "eslint-plugin-import": "~2.10.0",
     "eslint-plugin-jsx-a11y": "~6.0.3",
     "eslint-plugin-new-with-error": "~1.1.0",
@@ -43,7 +36,6 @@
     "eslint": "~4.19.1",
     "eslint-plugin-eslint-comments": "~2.0.2",
     "eslint-plugin-filenames": "~1.2.0",
-    "eslint-plugin-immutable": "~1.0.0",
     "eslint-plugin-import": "~2.10.0",
     "eslint-plugin-jsx-a11y": "~6.0.3",
     "eslint-plugin-new-with-error": "~1.1.0",

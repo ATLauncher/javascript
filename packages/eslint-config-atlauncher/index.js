@@ -10,7 +10,6 @@ const rules = [
     // eslint plugins
     './rules/plugin-atlauncher',
     './rules/plugin-eslint-comments',
-    './rules/plugin-immutable',
     './rules/plugin-import',
     './rules/plugin-jsx-a11y',
     './rules/plugin-new-with-error',
@@ -24,7 +23,6 @@ module.exports = {
         '@atlauncher/eslint-plugin-atlauncher',
         'eslint-comments',
         'filenames',
-        'immutable',
         'import',
         'jsx-a11y',
         'new-with-error',
