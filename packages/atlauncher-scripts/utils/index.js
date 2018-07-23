@@ -104,6 +104,7 @@ function getExplicitProjectPaths(pathString = '') {
 
     const returningPaths = pathsToReturn
         .map((thePath) => thePath.replace('*', ''))
+        .filter((thePath) => fs.lstatSync(thePath).isDirectory())
         .map((thePath) => path.resolve(process.cwd(), thePath, pathString));
 
     return returningPaths;
