@@ -29,7 +29,7 @@
     "commitmsg": "commitlint -x @atlauncher/commitlint-config-atlauncher -e .git/COMMIT_EDITMSG"
   },
   "dependencies": {
-    "@atlauncher/babel-preset-atlauncher": "0.2.0",
+    "@atlauncher/babel-preset-atlauncher": "0.2.1",
     "@atlauncher/commitlint-config-atlauncher": "0.1.1",
     "@atlauncher/eslint-config-atlauncher": "0.1.1",
     "@atlauncher/eslint-plugin-atlauncher": "0.3.0",
