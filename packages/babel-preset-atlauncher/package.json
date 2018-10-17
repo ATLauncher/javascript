@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/ATLauncher/javascript",
   "dependencies": {
+    "babel-plugin-module-resolver": "~3.1.1",
     "babel-plugin-transform-class-properties": "~6.24.1",
     "babel-plugin-transform-dynamic-import": "~2.0.0",
     "babel-plugin-transform-object-rest-spread": "~6.26.0",
