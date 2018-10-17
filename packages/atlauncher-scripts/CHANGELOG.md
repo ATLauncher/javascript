@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.2.4"></a>
+## [0.2.4](https://github.com/ATLauncher/javascript/compare/@atlauncher/atlauncher-scripts@0.2.3...@atlauncher/atlauncher-scripts@0.2.4) (2018-10-17)
+
+
+### Bug Fixes
+
+* **atlauncher-scripts:** update babel-preset-atlauncher ([1962d32](https://github.com/ATLauncher/javascript/commit/1962d32))
+
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/ATLauncher/javascript/compare/@atlauncher/atlauncher-scripts@0.2.2...@atlauncher/atlauncher-scripts@0.2.3) (2018-10-17)
 
