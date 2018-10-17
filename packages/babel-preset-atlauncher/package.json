@@ -1,6 +1,6 @@
 {
   "name": "@atlauncher/babel-preset-atlauncher",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ATLauncher's babel preset.",
   "main": "index.js",
   "repository": {
