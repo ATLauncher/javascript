@@ -48,9 +48,8 @@ module.exports = function() {
     var fs = require('fs');
     var path = require('path');
 
-    var resolvePath = path.join(process.cwd(), 'resolve.json');
+    var resolvePath = path.join(process.cwd(), 'resolve.js');
     var useModuleResolver = fs.existsSync(resolvePath);
-    var moduleResolverConfig = useModuleResolver && fs.readFileSync(resolvePath);
 
     return {
         presets: [
@@ -93,7 +92,7 @@ module.exports = function() {
             [require('babel-plugin-transform-react-jsx'), { useBuiltIns: true }],
 
             // use module resolver if there is a `resolve.json` file in the project root
-            useModuleResolver && [require('babel-plugin-module-resolver'), moduleResolverConfig],
+            useModuleResolver && [require('babel-plugin-module-resolver'), require(resolvePath)],
         ].filter(Boolean),
     };
 };
