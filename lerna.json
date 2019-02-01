@@ -1,9 +1,9 @@
 {
-  "lerna": "2.10.1",
+  "lerna": "3.10.7",
   "packages": ["packages/*"],
-  "commands": {
+  "command": {
     "publish": {
-      "ignore": [
+      "ignoreChanges": [
         "*.md",
         ".github/*",
         ".nvmrc",
@@ -14,7 +14,8 @@
         ".nvmrc",
         "LICENSE",
         "package-lock.json"
-      ]
+      ],
+      "message": "chore(release): publish"
     }
   },
   "version": "independent"
